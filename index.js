@@ -1,36 +1,5 @@
 import { Client } from "https://unpkg.com/archipelago.js/dist/archipelago.min.js";
 
-var ITEM_COLOR = {
-  progression: "300deg",
-  useful: "150deg",
-  trap: 0,
-  filler: "200deg",
-};
-var ITEM_TEXT_COLOR = {
-  progression: "#d269ec",
-  useful: "#68e78e",
-  trap: "#ee6969",
-  filler: "#4cd3f5",
-};
-var AVATAR_IMG = [
-  { name: "Outer Wilds", img: "./character/outer_wilds.png" },
-  { name: "Celeste (Open World)", img: "./character/celeste.png" },
-  { name: "Hollow Knight", img: "./character/hollow_knight.png" },
-  { name: "Dark Souls III", img: "./character/dark_souls_3.png" },
-  { name: "Pokemon Emerald", img: "./character/pokemon.png" },
-  { name: "Super Mario 64", img: "./character/super_mario.png" },
-  { name: "Terraria", img: "./character/terraria.png" },
-  { name: "Stardew Valley", img: "./character/stardew_valley.png" },
-  { name: "Ocarina of Time", img: "./character/zelda_ocarina.png" },
-  { name: "Risk of Rain 2", img: "./character/risk_of_rain.png" },
-  { name: "Kingdom Hearts 2", img: "./character/kingdom_hearts.png" },
-  { name: "Starcraft 2", img: "./character/starcraft.png" },
-  { name: "A Link to the Past", img: "./character/zelda_ocarina.png" }, //should be its own pic
-  { name: "Undertale", img: "./character/undertale.png" },
-  { name: "Minecraft", img: "./character/minecraft.png" },
-];
-var AVATAR_IMG_DEFAULT = "./character/unknown.png";
-
 $(document).ready(function () {
   $("#error").hide();
 
@@ -44,7 +13,7 @@ $(document).ready(function () {
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10_000;
 
-  var count = 0;
+  let count = 0;
 
   function log(message) {
     console.log("AP message: " + message);
@@ -54,40 +23,6 @@ $(document).ready(function () {
     console.error(message);
     $("#error").show();
     $("#error").html(message);
-  }
-
-  function getTransactionElement(
-    location,
-    player1,
-    game1,
-    item,
-    itemColor,
-    player2,
-    game2,
-  ) {
-    let avatar1 = AVATAR_IMG.filter((avatar) => avatar.name == game1);
-    let img1 = avatar1.length > 0 ? avatar1[0].img : AVATAR_IMG_DEFAULT;
-
-    let avatar2 = AVATAR_IMG.filter((avatar) => avatar.name == game2);
-    let img2 = avatar2.length > 0 ? avatar2[0].img : AVATAR_IMG_DEFAULT;
-
-    let element = transactionTemplate.clone();
-    $(element).attr("id", "message" + count);
-    count++;
-    $(element).find("#location").text(location);
-    $(element).find("#player1 #name").text(player1);
-    $(element).find("#player1 #game").text(game1);
-    $(element).find("#player1 img").attr("src", img1);
-    $(element).find("#item div").text(item);
-    $(element)
-      .find("#item div")
-      .css("--shadow-color", ITEM_TEXT_COLOR[itemColor]);
-    $(element).find(".recolor").css("--recolor", ITEM_COLOR[itemColor]);
-    $(element).find("#player2 #name").text(player2);
-    $(element).find("#player2 #game").text(game2);
-    $(element).find("#player2 img").attr("src", img2);
-    $(element).addClass("enter");
-    return element;
   }
 
   function processMessage(item) {
@@ -117,15 +52,7 @@ $(document).ready(function () {
     $("#transactionList").append(element);
     setTimeout(() => wipeTopMessage(elementId), holdTime);
   }
-
-  function wipeTopMessage(elementId) {
-    $("#" + elementId).removeClass("enter");
-    $("#" + elementId).addClass("exit");
-    setTimeout(() => {
-      $("#" + elementId).remove();
-    }, 500);
-  }
-
+  
   if (port && player) {
     if (!port.match(/^[0-9]{1,5}$/)) {
       error(`Not a valid port: '${port}'. Must be like '12345'`);

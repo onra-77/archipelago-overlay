@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="./index.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="module" src="./constants.js"></script>
+        <script type="module" src="./visual.js"></script>
         <script type="module" src="https://unpkg.com/archipelago.js/dist/archipelago.min.js"></script>
         <script type="module" src="./index.js"></script>
         
@@ -38,6 +40,8 @@
                 <input id="holdTime" value="10000"></input> milliseconds
             </div>
             <button id="connect">GO</button>
+            <div id="loginError" class="error"></div>
+            <div id="fakeTransactionList"></div>
         </div>
         <div id="error" class="error"></div>
         <div id="transactionList">
