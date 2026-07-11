@@ -1,0 +1,137 @@
+/* general */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Carter One", system-ui;
+}
+
+body {
+  margin: 40px;
+  max-width: 600px;
+}
+
+.error {
+  color: #920e0e;
+  font-weight: 200;
+}
+
+.h-0-75 {
+  height: 120px;
+  width: auto;
+}
+
+.h-1 {
+  height: 160px;
+  width: auto;
+}
+
+.w-1 {
+  width: 80px;
+}
+
+.w-1-5 {
+  width: 110px;
+}
+
+.w-2 {
+  width: 160px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flip-h {
+  transform: scaleX(-1);
+}
+
+.text {
+  text-align: center;
+  align-content: center;
+  font-weight: 1000;
+}
+
+.shadow {
+  filter: drop-shadow(5px 1px 4px #222222);
+}
+
+/* components */
+
+.transaction {
+  height: 240px;
+  color: white;
+}
+
+.text-item {
+  position: relative;
+  font-size: 1.8em;
+  top: 10px;
+  filter: drop-shadow(5px 1px 4px var(--shadow-color));
+}
+
+.text-player {
+  position: relative;
+  bottom: 30px;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.2em;
+  font-stretch: condensed;
+}
+
+.text-game {
+  position: relative;
+  bottom: 30px;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.text-location {
+  color: white;
+  font-size: 1.1em;
+}
+
+.recolor {
+  filter: hue-rotate(var(--recolor));
+}
+
+.arrow {
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+.enter {
+  animation: 0.5s linear 0s 1 normal slide-in;
+}
+
+.exit {
+  animation: 0.5s linear 0s 1 normal slide-out;
+}
+/* animation */
+
+@keyframes slide-in {
+  from {
+    /* pousse le soleil en dessous de la zone d'affichage */
+    transform: translateY(5vh);
+    opacity: 0%;
+  }
+  to {
+    /* ramène le soleil à sa position par défaut */
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    /* pousse le soleil en dessous de la zone d'affichage */
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  to {
+    /* ramène le soleil à sa position par défaut */
+    transform: translateY(-5vh);
+    opacity: 0%;
+  }
+}

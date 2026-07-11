@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="favicon.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Jersey+10&family=Limelight&family=Outfit:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap">
+        <link rel="stylesheet" href="./index.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/archipelago.js/dist/archipelago.min.js"></script>
+        <script type="module" src="./index.js"></script>
+        
+    </head>
+    <body>
+        <div id="login">
+            <h1>Archipelago Overlay</h1>
+            <p>Welcome, enter your archipelago informations below to connect.</p>
+            <p>Once you click GO, the URL of the page will be replaced to include informations (https://arnogb.github.io/archipelago-overlay/?port=12345&player=onra77) for example. 
+                You can then copy that URL and use it as an OBS widget by adding a Browser source and setting the URL to what you copied.</p>
+            <h3>Your password will be clearly visible in the URL</h3>
+            <div>
+                <label>Port (archipelago.gg:...)</label>
+                <input id="port" placeholder="12345"></input>
+            </div>
+            <div>
+                <label>Player:</label>
+                <input id="player" placeholder="You"></input>
+            </div>
+            <div>
+                <label>Password (optional):</label>
+                <input id="passw" type="password"></input>
+            </div>
+            <div>
+                <label>Message hold time:</label>
+                <input id="holdTime" value="10000"></input> milliseconds
+            </div>
+            <button id="connect">GO</button>
+        </div>
+        <div id="error" class="error"></div>
+        <div id="transactionList">
+            <div id="transactionTemplate" class="flex h-1 transaction" style="display:none;">
+                <div id="location" class="text text-location h-1 w-1 shadow">LIEU</div>
+                <div id="player1" class="h-1 w-1-5 shadow">
+                    <img src="./character/unknown.png" class="h-1">
+                    <div id="name" class="text text-player">JOUEUR 1</div>
+                    <div id="game" class="text text-game">JEU 1</div>
+                </div>
+                <div id="item" class="h-1 w-2">
+                    <div class="text text-pink text-item">OBJET</div>
+                    <img src="./character/arrow.png" class="h-0-75 recolor arrow">
+                </div>
+                <div id="player2" class="shadow">
+                    <img src="./character/unknown.png" class="flip-h h-1">
+                    <div id="name" class="text text-player">JOUEUR 2</div>
+                    <div id="game"class="text text-game">JEU 2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
