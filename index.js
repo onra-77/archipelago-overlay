@@ -4,8 +4,6 @@ $(document).ready(function () {
   $("#error").hide();
 
   var client = new Client();
-  var transactionTemplate = $("#transactionTemplate").detach();
-  transactionTemplate.show();
 
   let params = new URLSearchParams(document.location.search);
   let port = params.get("port");
@@ -52,7 +50,7 @@ $(document).ready(function () {
     $("#transactionList").append(element);
     setTimeout(() => wipeTopMessage(elementId), holdTime);
   }
-  
+
   if (port && player) {
     if (!port.match(/^[0-9]{1,5}$/)) {
       error(`Not a valid port: '${port}'. Must be like '12345'`);
