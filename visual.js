@@ -4,6 +4,8 @@ $(document).ready(function () {
   transactionTemplate.show();
 });
 
+var count = 0;
+
 function getTransactionElement(
   location,
   player1,
