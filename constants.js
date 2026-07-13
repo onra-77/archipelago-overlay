@@ -1,4 +1,3 @@
-
 var ITEM_COLOR = {
   progression: "300deg",
   useful: "150deg",
@@ -27,5 +26,16 @@ var AVATAR_IMG = [
   { name: "A Link to the Past", img: "./character/zelda_ocarina.png" }, //should be its own pic
   { name: "Undertale", img: "./character/undertale.png" },
   { name: "Minecraft", img: "./character/minecraft.png" },
+  { name: "The Wind Waker", img: "./character/zelda_wind_waker.png" },
+  { name: "A Hat in Time", img: "./character/hat_in_time.png" },
+  { name: "Sonic Adventure 2 Battle", img: "./character/sonic.png" },
+  { name: "Yacht Dice", img: "./character/dice.png" },
+  { name: "Inscryption", img: "./character/inscryption.png" },
+  { name: "The Witness", img: "./character/witness.png" },
+  { name: "TUNIC", img: "./character/tunic.png" },
+  { name: "Subnautica", img: "./character/subnautica.png" },
+  { name: "Kingdom Hearts", img: "./character/kingdom_hearts.png" },
+  { name: "Super Mario World", img: "./character/super_mario.png" },
+  { name: "Pokemon Red and Blue", img: "./character/pokemon.png" },
 ];
 var AVATAR_IMG_DEFAULT = "./character/unknown.png";
