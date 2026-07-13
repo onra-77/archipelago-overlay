@@ -11,8 +11,6 @@ $(document).ready(function () {
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10_000;
 
-  let count = 0;
-
   function log(message) {
     console.log("AP message: " + message);
   }
