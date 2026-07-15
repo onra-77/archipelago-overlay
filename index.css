@@ -57,6 +57,10 @@ body {
 
 /* components */
 
+.login {
+  margin-bottom: 30px;
+}
+
 .transaction {
   height: 240px;
   color: white;
