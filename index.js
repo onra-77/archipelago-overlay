@@ -27,7 +27,7 @@ var FAKE_LOCATIONS = [
   "Complete level 1",
   "Under the sofa",
   "Defeat Bowser",
-  "Gold Coin",
+  "Forest chest",
   "World 2 shop",
   "Behind the lovely bush at the left of entrance door",
   "Soup store",
