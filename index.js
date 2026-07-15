@@ -102,7 +102,7 @@ $(document).ready(function () {
       location,
       player1,
       game1,
-      itemName,
+      item,
       useful,
       player2,
       game2,
