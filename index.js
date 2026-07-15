@@ -1,9 +1,49 @@
 import { Client } from "https://unpkg.com/archipelago.js/dist/archipelago.min.js";
 
+var FAKE_NAMES = [
+  "Madeline",
+  "Samus",
+  "Steve",
+  "Ash",
+  "Sonic",
+  "Mario",
+  "Frisk",
+  "Link",
+];
+
+var FAKE_ITEMS = [
+  "Sword",
+  "Bread",
+  "Apple",
+  "Gold Coin",
+  "Fish",
+  "Level 5 door key",
+  "Machine Gun",
+  "Sandwich",
+  "Diamond armor",
+];
+
+var FAKE_LOCATIONS = [
+  "Complete level 1",
+  "Under the sofa",
+  "Defeat Bowser",
+  "Gold Coin",
+  "World 2 shop",
+  "Behind the lovely bush at the left of entrance door",
+  "Soup store",
+  "Solve crosswords",
+];
+
+Array.prototype.random = function () {
+  return this[Math.floor(Math.random() * this.length)];
+};
+
 $(document).ready(function () {
   $("#error").hide();
 
   var client = new Client();
+
+  var loginMode = true;
 
   let params = new URLSearchParams(document.location.search);
   let port = params.get("port");
@@ -11,6 +51,7 @@ $(document).ready(function () {
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10_000;
 
+  //Functions
   function log(message) {
     console.log("AP message: " + message);
   }
@@ -49,6 +90,32 @@ $(document).ready(function () {
     setTimeout(() => wipeTopMessage(elementId), holdTime);
   }
 
+  function fakeFeed() {
+    let player1 = FAKE_NAMES.random();
+    let player2 = FAKE_NAMES.random();
+    let game1 = AVATAR_IMG.random().name;
+    let game2 = AVATAR_IMG.random().name;
+    let item = FAKE_ITEMS.random();
+    let location = FAKE_LOCATIONS.random();
+    let useful = ["progression", "useful", "trap", "filler"].random();
+    let element = getTransactionElement(
+      location,
+      player1,
+      game1,
+      itemName,
+      useful,
+      player2,
+      game2,
+    );
+    let elementId = $(element).attr("id");
+    if (loginMode) {
+      $("#transactionList").append(element);
+      setTimeout(() => wipeTopMessage(elementId), holdTime);
+      setTimeout(() => fakeFeed(), holdTime - 100);
+    }
+  }
+
+  //login logic
   if (port && player) {
     if (!port.match(/^[0-9]{1,5}$/)) {
       error(`Not a valid port: '${port}'. Must be like '12345'`);
@@ -63,6 +130,8 @@ $(document).ready(function () {
       return;
     }
     login();
+  } else {
+    fakeFeed();
   }
 
   $("#connect").on("click", () => {
@@ -111,6 +180,8 @@ $(document).ready(function () {
   });
 
   function login() {
+    $("#transactionList").empty();
+    loginMode = false;
     $("#error").hide();
     $("#login").hide();
     if (password) {
@@ -140,6 +211,7 @@ $(document).ready(function () {
     }
   }
 
+  //active listeners
   let hasRunOnce = false;
   client.items.on("itemsReceived", (items) => {
     if (!hasRunOnce) {
