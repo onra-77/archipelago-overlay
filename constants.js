@@ -76,7 +76,7 @@ Overcooked! 2
   { name: "Pokemon Red and Blue", img: "./character/pokemon.png" },
   //Raft
   { name: "Risk of Rain 2", img: "./character/risk_of_rain.png" },
-  { name: "Satisfactory", img: "./character/risk_of_rain.png" },
+  { name: "Satisfactory", img: "./character/satisfactory.png" },
   /*
 Saving Princess
 Secret of Evermore
