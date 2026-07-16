@@ -105,6 +105,11 @@ body {
   left: 20px;
 }
 
+#player2 {
+  position: relative;
+  left: -10px;
+}
+
 .enter {
   animation: 0.5s linear 0s 1 normal slide-in;
 }
