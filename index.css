@@ -7,7 +7,11 @@
 
 body {
   margin: 40px;
-  max-width: 600px;
+  max-width: 1200px;
+}
+
+tt {
+  font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
 }
 
 .error {
