@@ -69,11 +69,11 @@ Castlevania 64*/
 Choo Choo Charles*/
   { name: "Civilization VI", img: "./character/civilisation.png" },
   { name: "Dark Souls III", img: "./character/dark_souls_3.png" },
-  /*DLCQuest
-Donkey Kong Country 3
-DOOM 1993
-DOOM II
-Earthbound
+  //DLCQuest
+  { name: "Donkey Kong Country 3", img: "./character/donkey_kong.png" },
+  { name: "DOOM 1993", img: "./character/doom.png" },
+  { name: "DOOM II", img: "./character/doom.png" },
+  /*Earthbound
 Factorio
 Faxanadu
 Final Fantasy
@@ -87,10 +87,16 @@ Final Fantasy Mystic Quest*/
   { name: "Kingdom Hearts", img: "./character/kingdom_hearts.png" },
   { name: "Kingdom Hearts 2", img: "./character/kingdom_hearts.png" },
   /*Kirby's Dream Land 3
-Landstalker - The Treasures of King Nole
-The Legend of Zelda
-The Legend of Zelda: A Link to the Past
-The Legend of Zelda: Links Awakening DX*/
+Landstalker - The Treasures of King Nole*/
+  { name: "The Legend of Zelda", img: "./character/zelda_ocarina.png" },
+  {
+    name: "The Legend of Zelda: A Link to the Past",
+    img: "./character/zelda_wind_waker.png",
+  },
+  {
+    name: "The Legend of Zelda: Links Awakening DX",
+    img: "./character/zelda_wind_waker.png",
+  },
   { name: "Ocarina of Time", img: "./character/zelda_ocarina.png" },
   {
     name: "The Legend of Zelda: Ocarina of Time",
@@ -102,9 +108,9 @@ The Legend of Zelda: Links Awakening DX*/
     img: "./character/zelda_wind_waker.png",
   },
   /*Lingo
-Lufia II Ancient Cave
-Mario & Luigi Superstar Saga
-Mega Man 2
+Lufia II Ancient Cave*/
+  { name: "Mario & Luigi Superstar Saga", img: "./character/super_mario.png" },
+  /*Mega Man 2
 Mega Man 3
 MegaMan Battle Network 3
 Meritous
@@ -191,9 +197,9 @@ Dark Souls II
 Deep Rock Galactic
 DELTARUNE
 Diddy Kong Racing
-Dome Keeper
-Donkey Kong 64
-Door to Door Door Salesman
+Dome Keeper*/
+  { name: "Donkey Kong 64", img: "./character/donkey_kong.png" },
+  /*Door to Door Door Salesman
 DORONKO WANKO
 Dream Dazia
 Duke Nukem 3D
@@ -233,21 +239,46 @@ Kirby 64 - The Crystal Shards
 Kirby Super Star
 K-On! After School Live!!
 League of Legends
-LADX Beta
-The Legend of Zelda: A Link Between Worlds
-The Legend of Zelda: Majora's Mask
-The Legend of Zelda: The Minish Cap
-The Legend of Zelda: Ocarina of Time - Ship of Harkinian
-The Legend of Zelda: Oracle of Seasons
-The Legend of Zelda: Phantom Hourglass
-The Legend of Zelda: Twilight Princess
-The Legend of Zelda: Skyward Sword
-Lego Star Wars: The Complete Saga
+LADX Beta*/
+  {
+    name: "The Legend of Zelda: A Link Between Worlds",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: Majora's Mask",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: The Minish Cap",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: Ocarina of Time - Ship of Harkinian",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: Oracle of Seasons",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: Phantom Hourglass",
+    img: "./character/zelda_wind_waker.png",
+  },
+  {
+    name: "The Legend of Zelda: Twilight Princess",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "The Legend of Zelda: Skyward Sword",
+    img: "./character/zelda_ocarina.png",
+  },
+  /*Lego Star Wars: The Complete Saga
 Lingo 2
 Little Witch Nobeta
 Luigi's Mansion
-Mario is Missing (SNES)
-Mega Man X4
+*/
+  { name: "Mario is Missing (SNES)", img: "./character/super_mario.png" },
+  /*Mega Man X4
 MetroCUBEvania
 
 */
@@ -263,10 +294,13 @@ Noita - Enemysanity
 Nonograhmm
 Ori and the Blind Forest
 Ori and the Will of the Wisps
-Oxygen Not Included
-Paper Mario 64
-Paper Mario: The Thousand Year Door
-Parkitect
+Oxygen Not Included*/
+  { name: "Paper Mario 64", img: "./character/super_mario.png" },
+  {
+    name: "Paper Mario: The Thousand Year Door",
+    img: "./character/super_mario.png",
+  },
+  /*Parkitect
 PEAK
 Piranesi Restoration Project (Luanti)
 Pizza Tower
@@ -326,9 +360,9 @@ TOEM: A Photo Adventure
 Turnip Boy Commits Tax Evasion
 Twisty Cube
 Tyrian / Tyrian 2000
-Ty The Tasmanian Tiger HD Remaster (PC)
-UZDoom
-Vampire Survivors
+Ty The Tasmanian Tiger HD Remaster (PC)*/
+  { name: "UZDoom", img: "./character/doom.png" },
+  /*Vampire Survivors
 Voltorb Flip (from Pokémon HG & SS)
 Wario Land 1
 Watery Words
@@ -340,9 +374,13 @@ Yellow Taxi Goes Vroom
 Yooka-Laylee
 YS VIII: Lacrimosa of Dana
 Yu-Gi-Oh! Dungeon Dice Monsters
-Yu-Gi-Oh! Forbidden Memories
-Zelda 2: The Adventure of Link 
-Anno 1800*/
+Yu-Gi-Oh! Forbidden Memories*/
+  {
+    name: "Zelda 2: The Adventure of Link",
+    img: "./character/zelda_ocarina.png",
+  },
+
+  /*Anno 1800*/
 
   //STABLE IN REVIEW
   /*Autopelago
@@ -377,10 +415,13 @@ Bloons Tower Defense 6
 Clique
 Cowtastic Cafe
 Crystal Project
-Dead Rising Deluxe Remastered
-Donkey Kong Country
-Donkey Kong Country 2: Diddy's Kong Quest
-Don't Starve Together
+Dead Rising Deluxe Remastered*/
+  { name: "Donkey Kong Country", img: "./character/donkey_kong.png" },
+  {
+    name: "Donkey Kong Country 2: Diddy's Kong Quest",
+    img: "./character/donkey_kong.png",
+  },
+  /*Don't Starve Together
 Dracomino
 Dragon Warrior
 The Elder Scrolls IV: Oblivion Remastered
@@ -392,9 +433,9 @@ The Guardian Legend
 Huniepop
 Huniepop 2: Double Date
 Kindergarten 2
-Lunacid
-Mario Kart: Double Dash
-Mega Man X
+Lunacid*/
+  { name: "Mario Kart: Double Dash", img: "./character/super_mario.png" },
+  /*Mega Man X
 Mega Man X2
 Mega Man X3
 Nine Sols
@@ -413,9 +454,12 @@ Rogue Legacy
 Skul: The Hero Slayer
 Slay the Spire
 Sonic Riders
-Spongebob Squarepants: Battle for Bikini Bottom
-Super Mario World: Spicy Mycena Waffles
-Tony Hawk's Pro Skater 1 + 2
+Spongebob Squarepants: Battle for Bikini Bottom*/
+  {
+    name: "Super Mario World: Spicy Mycena Waffles",
+    img: "./character/super_mario.png",
+  },
+  /*Tony Hawk's Pro Skater 1 + 2
 Touhou Koumakyou: The Embodiment of Scarlet Devil
 Touhou Youyoumu ~ Perfect Cherry Blossom
 ULTRAKILL
