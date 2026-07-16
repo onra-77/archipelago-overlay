@@ -1,39 +1,5 @@
 import { Client } from "https://unpkg.com/archipelago.js/dist/archipelago.min.js";
 
-var FAKE_NAMES = [
-  "Madeline",
-  "Samus",
-  "Steve",
-  "Ash",
-  "Sonic",
-  "Mario",
-  "Frisk",
-  "Link",
-];
-
-var FAKE_ITEMS = [
-  "Sword",
-  "Bread",
-  "Apple",
-  "Gold Coin",
-  "Fish",
-  "Level 5 door key",
-  "Machine Gun",
-  "Sandwich",
-  "Diamond armor",
-];
-
-var FAKE_LOCATIONS = [
-  "Complete level 1",
-  "Under the sofa",
-  "Defeat Bowser",
-  "Forest chest",
-  "World 2 shop",
-  "Behind the lovely bush at the left of entrance door",
-  "Soup store",
-  "Solve crosswords",
-];
-
 Array.prototype.random = function () {
   return this[Math.floor(Math.random() * this.length)];
 };

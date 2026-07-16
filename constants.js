@@ -1,15 +1,51 @@
 var ITEM_COLOR = {
   progression: "300deg",
-  useful: "150deg",
+  useful: "260deg",
   trap: 0,
   filler: "200deg",
 };
+
 var ITEM_TEXT_COLOR = {
-  progression: "#d269ec",
-  useful: "#68e78e",
-  trap: "#ee6969",
-  filler: "#4cd3f5",
+  progression: "#c83feb",
+  useful: "#5449ec",
+  trap: "#ec3d3d",
+  filler: "#3bcaee",
 };
+
+var FAKE_NAMES = [
+  "Madeline",
+  "Samus",
+  "Steve",
+  "Ash",
+  "Sonic",
+  "Mario",
+  "Frisk",
+  "Link",
+];
+
+var FAKE_ITEMS = [
+  "Sword",
+  "Bread",
+  "Apple",
+  "Gold Coin",
+  "Fish",
+  "Level 5 door key",
+  "Machine Gun",
+  "Sandwich",
+  "Diamond armor",
+];
+
+var FAKE_LOCATIONS = [
+  "Complete level 1",
+  "Under the sofa",
+  "Defeat Bowser",
+  "Forest chest",
+  "World 2 shop",
+  "Behind the lovely bush at the left of entrance door",
+  "Soup store",
+  "Solve crosswords",
+];
+
 var AVATAR_IMG = [
   //CORE
   /*  Adventure
