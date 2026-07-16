@@ -13,14 +13,15 @@ var ITEM_TEXT_COLOR = {
 };
 
 var FAKE_NAMES = [
-  "Madeline",
-  "Samus",
-  "Steve",
-  "Ash",
-  "Sonic",
-  "Mario",
-  "Frisk",
-  "Link",
+  "Gangle",
+  "Zooble",
+  "Kinger",
+  "Ragatha",
+  "Jax",
+  "Kaufmo",
+  "Pomni",
+  "Caine",
+  "Ribbit",
 ];
 
 var FAKE_ITEMS = [
