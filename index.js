@@ -77,7 +77,7 @@ $(document).ready(function () {
     if (loginMode) {
       $("#transactionList").append(element);
       setTimeout(() => wipeTopMessage(elementId), holdTime);
-      setTimeout(() => fakeFeed(), holdTime - 100);
+      setTimeout(() => fakeFeed(), holdTime / 2 - 100);
     }
   }
 

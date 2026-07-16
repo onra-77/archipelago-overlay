@@ -22,6 +22,15 @@ var FAKE_NAMES = [
   "Pomni",
   "Caine",
   "Ribbit",
+  "Gummigoo",
+  "Ming",
+  "Bubble",
+  "Queenie",
+  "Moon",
+  "Sun",
+  "Gloink Queen",
+  "Orbsman",
+  "Abel",
 ];
 
 var FAKE_ITEMS = [
