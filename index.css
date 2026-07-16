@@ -60,10 +60,10 @@ tt {
 }
 
 .shadow-color {
-  filter: drop-shadow(4px 2px 3px var(--shadow-color))
-    drop-shadow(-2px 2px 3px var(--shadow-color))
-    drop-shadow(4px -1px 3px var(--shadow-color))
-    drop-shadow(-2px -1px 3px var(--shadow-color));
+  filter: drop-shadow(2px 2px 1px var(--shadow-color))
+    drop-shadow(-2px 2px 1px var(--shadow-color))
+    drop-shadow(2px -2px 1px var(--shadow-color))
+    drop-shadow(-2px -2px 1px var(--shadow-color));
 }
 
 /* components */
