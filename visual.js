@@ -9,7 +9,7 @@ var count = 0;
 function hashColor(name) {
   //https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
   let hash = 0;
-  for (const char of string) {
+  for (const char of name) {
     hash = (hash << 5) - hash + char.charCodeAt(0);
     hash |= 0; // Constrain to 32bit integer
   }
