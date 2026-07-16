@@ -13,7 +13,7 @@ function hashColor(name) {
     hash = (hash << 5) - hash + char.charCodeAt(0);
     hash |= 0; // Constrain to 32bit integer
   }
-  return "#" + (hash & 0x00ffffff).toString(16).padStart(6, "0");
+  return "#" + (hash & 0x007f7f7f).toString(16).padStart(6, "0");
 }
 
 function getTransactionElement(
