@@ -6,6 +6,16 @@ $(document).ready(function () {
 
 var count = 0;
 
+function hashColor(name) {
+  //https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
+  let hash = 0;
+  for (const char of string) {
+    hash = (hash << 5) - hash + char.charCodeAt(0);
+    hash |= 0; // Constrain to 32bit integer
+  }
+  return hash;
+}
+
 function getTransactionElement(
   location,
   player1,
@@ -17,9 +27,11 @@ function getTransactionElement(
 ) {
   let avatar1 = AVATAR_IMG.filter((avatar) => avatar.name == game1);
   let img1 = avatar1.length > 0 ? avatar1[0].img : AVATAR_IMG_DEFAULT;
+  let color1 = hashColor(player1);
 
   let avatar2 = AVATAR_IMG.filter((avatar) => avatar.name == game2);
   let img2 = avatar2.length > 0 ? avatar2[0].img : AVATAR_IMG_DEFAULT;
+  let color2 = hashColor(player2);
 
   let element = transactionTemplate.clone();
   $(element).attr("id", "message" + count);
@@ -28,6 +40,7 @@ function getTransactionElement(
   $(element).find("#player1 #name").text(player1);
   $(element).find("#player1 #game").text(game1);
   $(element).find("#player1 img").attr("src", img1);
+  $(element).find("#player1 .shadow-color").css("--shadow-color", color1);
   $(element).find("#item div").text(item);
   $(element)
     .find("#item div")
@@ -36,6 +49,7 @@ function getTransactionElement(
   $(element).find("#player2 #name").text(player2);
   $(element).find("#player2 #game").text(game2);
   $(element).find("#player2 img").attr("src", img2);
+  $(element).find("#player2 .shadow-color").css("--shadow-color", color2);
   $(element).addClass("enter");
   return element;
 }

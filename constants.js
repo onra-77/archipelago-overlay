@@ -21,14 +21,7 @@ var FAKE_NAMES = [
   "Kaufmo",
   "Pomni",
   "Caine",
-  "Ribbit",
-  "Ming",
-  "Bubble",
-  "Queenie",
-  "Gloink Queen",
-  "Orbsman",
-  "Abel",
-];
+]; //not too many characters, to increase seeing repeating names
 
 var FAKE_ITEMS = [
   "Sword",

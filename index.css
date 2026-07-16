@@ -55,13 +55,16 @@ body {
   filter: drop-shadow(5px 1px 4px #222222);
 }
 
+.shadow-color {
+  filter: drop-shadow(5px 1px 4px var(--shadow-color));
+}
+
 /* components */
 
 #login {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 30px;
-  filter: drop-shadow(5px 1px 4px black);
   padding: 30px;
 }
 
