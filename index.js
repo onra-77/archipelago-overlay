@@ -84,8 +84,9 @@ $(document).ready(function () {
   //login logic
   if (address && player) {
     // If the user typed in just a port, assume it was for archipelago.gg
-    if (address.match(/^[0-9]{1,5}$/)) {
-      address = `archipelago.gg:${address}`;
+    if (!address.match(/^[A-Za-z0-9._%-]*$/)) {
+      error("Incorrect address! (expecting archipelago.gg:12345)");
+      return;
     }
     if (!player.match(/^[A-Za-z0-9 _-]*$/)) {
       error(`Player must not be empty`);
@@ -103,12 +104,25 @@ $(document).ready(function () {
   $("#connect").on("click", () => {
     $("#error").hide();
 
-    let address = $("#address").val();
-    if (!address) {
+    let customUrl = $("#address").val();
+    if (!customUrl) {
       error("Missing address!");
       return;
     }
-    params.set("address", address);
+    if (!customUrl.match(/^[A-Za-z0-9._%-]*$/)) {
+      error("Incorrect address! (expecting archipelago.gg)");
+      return;
+    }
+    let port = $("#port").val();
+    if (!port) {
+      error("Missing port!");
+      return;
+    }
+    if (!port.match(/^[0-9]*$/)) {
+      error("Incorrect port! (expecting 12345)");
+      return;
+    }
+    params.set("address", encodeURIComponent(address + ":" + port));
 
     let player = $("#player").val();
     if (player && player.match(/^[A-Za-z0-9 _-]*$/)) {
@@ -169,9 +183,7 @@ $(document).ready(function () {
           log("Connected to the Archipelago server!");
         })
         .catch((err) => {
-          error(
-            `Could not connect to game ${address} with player ${player}`,
-          );
+          error(`Could not connect to game ${address} with player ${player}`);
         });
     }
   }
