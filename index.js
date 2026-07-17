@@ -44,11 +44,11 @@ $(document).ready(function () {
           : "filler";
     let element = getTransactionElement(
       location,
-      player1,
+      player1.name,
       game1,
       itemName,
       useful,
-      player2,
+      player2.name,
       game2,
     );
     let elementId = $(element).attr("id");
