@@ -109,7 +109,7 @@ $(document).ready(function () {
       error("Missing address!");
       return;
     }
-    if (!uri.match(/^[A-Za-z0-9._%-]*$/)) {
+    if (!uri.match(/^[A-Za-z0-9._%:-]*$/)) {
       error("Incorrect address! (expecting archipelago.gg)");
       return;
     }
