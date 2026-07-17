@@ -12,7 +12,7 @@ $(document).ready(function () {
   var loginMode = true;
 
   let params = new URLSearchParams(document.location.search);
-  let port = params.get("port");
+  let address = params.get("address");
   let player = params.get("player");
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10_000;
@@ -44,11 +44,11 @@ $(document).ready(function () {
           : "filler";
     let element = getTransactionElement(
       location,
-      player1,
+      player1.name,
       game1,
       itemName,
       useful,
-      player2,
+      player2.name,
       game2,
     );
     let elementId = $(element).attr("id");
@@ -82,10 +82,10 @@ $(document).ready(function () {
   }
 
   //login logic
-  if (port && player) {
-    if (!port.match(/^[0-9]{1,5}$/)) {
-      error(`Not a valid port: '${port}'. Must be like '12345'`);
-      return;
+  if (address && player) {
+    // If the user typed in just a port, assume it was for archipelago.gg
+    if (address.match(/^[0-9]{1,5}$/)) {
+      address = `archipelago.gg:${address}`;
     }
     if (!player.match(/^[A-Za-z0-9 _-]*$/)) {
       error(`Player must not be empty`);
@@ -103,13 +103,12 @@ $(document).ready(function () {
   $("#connect").on("click", () => {
     $("#error").hide();
 
-    let port = $("#port").val();
-    if (!port || !port.match(/^[0-9]{1,5}$/)) {
-      error(`Not a valid port: '${port}'. Must be like '12345'`);
+    let address = $("#address").val();
+    if (!address) {
+      error("Missing address!");
       return;
-    } else {
-      params.set("port", port);
     }
+    params.set("address", address);
 
     let player = $("#player").val();
     if (player && player.match(/^[A-Za-z0-9 _-]*$/)) {
@@ -152,7 +151,7 @@ $(document).ready(function () {
     $("#login").hide();
     if (password) {
       client
-        .login("archipelago.gg:" + port, player, undefined, {
+        .login(address, player, undefined, {
           password: password,
         })
         .then(() => {
@@ -160,18 +159,18 @@ $(document).ready(function () {
         })
         .catch((err) => {
           error(
-            `Could not connect to game archipelago.gg:${port} with player ${player} and password <span style="color: black; background: black; span:hover {color: white}">${password}</span>`,
+            `Could not connect to game ${address} with player ${player} and password <span style="color: black; background: black; span:hover {color: white}">${password}</span>`,
           );
         });
     } else {
       client
-        .login("archipelago.gg:" + port, player)
+        .login(address, player)
         .then(() => {
           log("Connected to the Archipelago server!");
         })
         .catch((err) => {
           error(
-            `Could not connect to game archipelago.gg:${port} with player ${player}`,
+            `Could not connect to game ${address} with player ${player}`,
           );
         });
     }
