@@ -122,7 +122,7 @@ $(document).ready(function () {
       error("Incorrect port! (expecting 12345)");
       return;
     }
-    params.set("address", encodeURIComponent(address + ":" + port));
+    params.set("address", encodeURIComponent(customUrl + ":" + port));
 
     let player = $("#player").val();
     if (player && player.match(/^[A-Za-z0-9 _-]*$/)) {
