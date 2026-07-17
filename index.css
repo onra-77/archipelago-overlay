@@ -60,10 +60,10 @@ tt {
 }
 
 .shadow-color {
-  filter: drop-shadow(1px 1px 0px hsl(var(--shadow-color) 80% 50%))
-    drop-shadow(-1px 1px 0px hsl(var(--shadow-color) 80% 50%))
-    drop-shadow(1px -1px 0px hsl(var(--shadow-color) 80% 50%))
-    drop-shadow(-1px -1px 0px hsl(var(--shadow-color) 80% 50%));
+  filter: drop-shadow(10px 0px 0px hsl(var(--shadow-color) 80% 50%))
+    drop-shadow(0px 10px 0px hsl(var(--shadow-color) 80% 50%))
+    drop-shadow(-10px 0px 0px hsl(var(--shadow-color) 80% 50%))
+    drop-shadow(0px -10px 0px hsl(var(--shadow-color) 80% 50%));
 }
 
 /* components */
