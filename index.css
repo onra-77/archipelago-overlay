@@ -60,10 +60,9 @@ tt {
 }
 
 .shadow-color {
-  filter: drop-shadow(2px 2px 1px var(--shadow-color))
-    drop-shadow(-2px 2px 1px var(--shadow-color))
-    drop-shadow(2px -2px 1px var(--shadow-color))
-    drop-shadow(-2px -2px 1px var(--shadow-color));
+  filter: drop-shadow(1px 1px 0px #db3c3c) drop-shadow(-1px 1px 0px #db3c3c)
+    drop-shadow(1px -1px 0px #db3c3c) drop-shadow(-1px -1px 0px #db3c3c)
+    hue-rotate(var(--shadow-color));
 }
 
 /* components */

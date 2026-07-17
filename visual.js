@@ -6,14 +6,14 @@ $(document).ready(function () {
 
 var count = 0;
 
-function hashColor(name) {
+function hash(name) {
   //https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
   let hash = 0;
   for (const char of name) {
     hash = (hash << 5) - hash + char.charCodeAt(0);
     hash |= 0; // Constrain to 32bit integer
   }
-  return "#" + (hash & 0x007f7f7f).toString(16).padStart(6, "0");
+  return hash;
 }
 
 function getTransactionElement(
@@ -27,11 +27,11 @@ function getTransactionElement(
 ) {
   let avatar1 = AVATAR_IMG.filter((avatar) => avatar.name == game1);
   let img1 = avatar1.length > 0 ? avatar1[0].img : AVATAR_IMG_DEFAULT;
-  let color1 = hashColor(player1);
+  let color1 = (hashColor(player1) % 360) + "deg";
 
   let avatar2 = AVATAR_IMG.filter((avatar) => avatar.name == game2);
   let img2 = avatar2.length > 0 ? avatar2[0].img : AVATAR_IMG_DEFAULT;
-  let color2 = hashColor(player2);
+  let color2 = (hashColor(player2) % 360) + "deg";
 
   let element = transactionTemplate.clone();
   $(element).attr("id", "message" + count);
