@@ -27,11 +27,11 @@ function getTransactionElement(
 ) {
   let avatar1 = AVATAR_IMG.filter((avatar) => avatar.name == game1);
   let img1 = avatar1.length > 0 ? avatar1[0].img : AVATAR_IMG_DEFAULT;
-  let color1 = (hashColor(player1) % 360) + "deg";
+  let color1 = (hash(player1) % 360) + "deg";
 
   let avatar2 = AVATAR_IMG.filter((avatar) => avatar.name == game2);
   let img2 = avatar2.length > 0 ? avatar2[0].img : AVATAR_IMG_DEFAULT;
-  let color2 = (hashColor(player2) % 360) + "deg";
+  let color2 = (hash(player2) % 360) + "deg";
 
   let element = transactionTemplate.clone();
   $(element).attr("id", "message" + count);
