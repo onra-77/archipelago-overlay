@@ -84,7 +84,7 @@ $(document).ready(function () {
   //login logic
   if (address && player) {
     // If the user typed in just a port, assume it was for archipelago.gg
-    if (!address.match(/^[A-Za-z0-9._%-]*$/)) {
+    if (!address.match(/^[A-Za-z0-9._%:-]*$/)) {
       error("Incorrect address! (expecting archipelago.gg:12345)");
       return;
     }
