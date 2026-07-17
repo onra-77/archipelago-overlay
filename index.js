@@ -12,7 +12,7 @@ $(document).ready(function () {
   var loginMode = true;
 
   let params = new URLSearchParams(document.location.search);
-  let address = params.get("address");
+  let address = decodeURIComponent(params.get("address"));
   let player = params.get("player");
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10_000;
@@ -104,12 +104,12 @@ $(document).ready(function () {
   $("#connect").on("click", () => {
     $("#error").hide();
 
-    let customUrl = $("#address").val();
-    if (!customUrl) {
+    let uri = $("#address").val();
+    if (!uri) {
       error("Missing address!");
       return;
     }
-    if (!customUrl.match(/^[A-Za-z0-9._%-]*$/)) {
+    if (!uri.match(/^[A-Za-z0-9._%-]*$/)) {
       error("Incorrect address! (expecting archipelago.gg)");
       return;
     }
@@ -122,7 +122,7 @@ $(document).ready(function () {
       error("Incorrect port! (expecting 12345)");
       return;
     }
-    params.set("address", encodeURIComponent(customUrl + ":" + port));
+    params.set("address", encodeURIComponent(uri + ":" + port));
 
     let player = $("#player").val();
     if (player && player.match(/^[A-Za-z0-9 _-]*$/)) {
