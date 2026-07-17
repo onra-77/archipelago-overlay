@@ -15,7 +15,14 @@ $(document).ready(function () {
   let address = decodeURIComponent(params.get("address"));
   let player = params.get("player");
   let password = params.get("password");
-  let holdTime = params.get("holdtime") ?? 10_000;
+  let holdTime = params.get("holdtime") ?? 10;
+
+  $("#holdTime").on("change", function () {
+    let value = $("#holdTime").val();
+    if (!isNaN(value)) {
+      holdTime = value;
+    }
+  });
 
   //Functions
   function log(message) {
@@ -53,7 +60,7 @@ $(document).ready(function () {
     );
     let elementId = $(element).attr("id");
     $("#transactionList").append(element);
-    setTimeout(() => wipeTopMessage(elementId), holdTime);
+    setTimeout(() => wipeTopMessage(elementId), holdTime * 1000);
   }
 
   function fakeFeed() {
@@ -76,8 +83,8 @@ $(document).ready(function () {
     let elementId = $(element).attr("id");
     if (loginMode) {
       $("#transactionList").append(element);
-      setTimeout(() => wipeTopMessage(elementId), holdTime);
-      setTimeout(() => fakeFeed(), holdTime / 2 - 100);
+      setTimeout(() => wipeTopMessage(elementId), holdTime * 1000);
+      setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
     }
   }
 
