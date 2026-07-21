@@ -68,7 +68,8 @@ tt {
 
 /* components */
 
-#login {
+#login,
+#settings {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 30px;

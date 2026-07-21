@@ -20,7 +20,7 @@
         <div id="login" class="shadow">
             <h1>Archipelago Overlay</h1>
             <h2>Welcome, enter your archipelago informations below to connect.</h2>
-            <p>Once you click GO, the URL of the page will be replaced to include informations (like <tt>https://onra-77.github.io/archipelago-overlay/?address=archipelago.gg:12345&player=onra77</tt>).
+            <p>Once you click GO, the URL of the page will be replaced to include informations (like <tt>https://onra-77.github.io/archipelago-overlay/?address=archipelago.gg%253A12345&player=onra77&holdtime=10</tt>).
                 You can then copy that URL and use it as an OBS widget</p>
                 <ol>
                     <li>Enter informations</li>
@@ -43,14 +43,15 @@
                 <label>Password (optional):</label>
                 <input id="passw" type="password"></input>
             </div>
-            <div>
-                <label>Message hold time:</label>
-                <input id="holdTime" value="10"></input> seconds
-            </div>
             <button id="connect">GO</button>
             <div id="loginError" class="error"></div>
         </div>
         <div id="error" class="error"></div>
+        <div id="settings" class="shadow">
+            <div>
+                <label>Message hold time:</label>
+                <input id="holdTime" value="10"></input> seconds
+            </div></div>
         <div id="transactionList">
             <div id="transactionTemplate" class="flex h-1 transaction" style="display:none;">
                 <div id="location" class="text text-location h-1 w-1 shadow">LIEU</div>

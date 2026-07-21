@@ -170,6 +170,7 @@ $(document).ready(function () {
     loginMode = false;
     $("#error").hide();
     $("#login").hide();
+    $("#settings").hide();
     if (password) {
       client
         .login(address, player, undefined, {
