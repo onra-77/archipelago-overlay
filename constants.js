@@ -50,37 +50,41 @@ var AVATAR_IMG = [
   //CORE
   /*  Adventure
 APQuest
-Aquaria
-Blasphemous
-Bomb Rush Cyberfunk
+Aquaria*/
+  { name: "Blasphemous", img: "./character/blasphemous.png" },
+  /* Bomb Rush Cyberfunk
 Bumper Stickers
 Castlevania - Circle of the Moon
 Castlevania 64*/
   { name: "Celeste (Open World)", img: "./character/celeste.png" },
   { name: "Celeste 64", img: "./character/celeste.png" },
-  /*ChecksFinder
-Choo Choo Charles*/
+  { name: "ChecksFinder", img: "./character/minesweeper.png" },
+  //Choo Choo Charles
   { name: "Civilization VI", img: "./character/civilisation.png" },
   { name: "Dark Souls III", img: "./character/dark_souls_3.png" },
   //DLCQuest
   { name: "Donkey Kong Country 3", img: "./character/donkey_kong.png" },
   { name: "DOOM 1993", img: "./character/doom.png" },
   { name: "DOOM II", img: "./character/doom.png" },
-  /*Earthbound
-Factorio
-Faxanadu
-Final Fantasy
-Final Fantasy Mystic Quest*/
+  { name: "Earthbound", img: "./character/earthbound.png" },
+  { name: "Factorio", img: "./character/factorio.png" },
+
+  //Faxanadu
+  //Final Fantasy
+  //Final Fantasy Mystic Quest
   { name: "A Hat in Time", img: "./character/hat_in_time.png" },
   //Heretic
   { name: "Hollow Knight", img: "./character/hollow_knight.png" },
   //Hylics 2
   { name: "Inscryption", img: "./character/inscryption.png" },
-  //Jak and Daxter: The Precursor Legacy
+  {
+    name: "Jak and Daxter: The Precursor Legacy",
+    img: "./character/jak_daxter.png",
+  },
   { name: "Kingdom Hearts", img: "./character/kingdom_hearts.png" },
   { name: "Kingdom Hearts 2", img: "./character/kingdom_hearts.png" },
-  /*Kirby's Dream Land 3
-Landstalker - The Treasures of King Nole*/
+  //Kirby's Dream Land 3
+  //Landstalker - The Treasures of King Nole
   { name: "The Legend of Zelda", img: "./character/zelda_ocarina.png" },
   {
     name: "The Legend of Zelda: A Link to the Past",
@@ -100,23 +104,22 @@ Landstalker - The Treasures of King Nole*/
     name: "The Legend of Zelda: The Wind Waker",
     img: "./character/zelda_wind_waker.png",
   },
-  /*Lingo
-Lufia II Ancient Cave*/
+  //Lingo
+  //Lufia II Ancient Cave
   { name: "Mario & Luigi Superstar Saga", img: "./character/super_mario.png" },
   /*Mega Man 2
 Mega Man 3
 MegaMan Battle Network 3
 Meritous
-The Messenger
-Muse Dash
-Noita
-Old School Runescape
-Overcooked! 2
-*/
+The Messenger*/
+  { name: "Muse Dash", img: "./character/muse_dash.png" },
+  { name: "Noita", img: "./character/noita.png" },
+  //Old School Runescape
+  //Overcooked! 2
   { name: "Paint", img: "./character/paint.png" },
   { name: "Pokemon Emerald", img: "./character/pokemon.png" },
   { name: "Pokemon Red and Blue", img: "./character/pokemon.png" },
-  //Raft
+  { name: "Raft", img: "./character/raft.png" },
   { name: "Risk of Rain 2", img: "./character/risk_of_rain.png" },
   { name: "Satisfactory", img: "./character/satisfactory.png" },
   /*
@@ -458,5 +461,9 @@ Touhou Youyoumu ~ Perfect Cherry Blossom
 ULTRAKILL
 Unfair Flips
 Zork: Grand Inquisitor*/
+
+  // UNSTABLE
+
+  { name: "FEZ", img: "./character/fez.png" },
 ];
 var AVATAR_IMG_DEFAULT = "./character/unknown.png";
