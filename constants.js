@@ -111,7 +111,8 @@ Castlevania 64*/
 Mega Man 3
 MegaMan Battle Network 3
 Meritous
-The Messenger*/
+*/
+  { name: "The Messenger", img: "./character/the_messenger.png" },
   { name: "Muse Dash", img: "./character/muse_dash.png" },
   { name: "Noita", img: "./character/noita.png" },
   //Old School Runescape
@@ -185,8 +186,9 @@ ClusterTruck
 Cobalt Core
 CornKidz64
 CrossCode
-Crystalis
-Cuphead
+Crystalis*/
+  { name: "Cuphead", img: "./character/cuphead.png" },
+  /*
 A Dance Of Fire And Ice
 Dark Cloud 1
 Dark Souls II
@@ -227,11 +229,20 @@ Isles of Sea and Sky
 Ittle Dew 2+
 Jigsaw Puzzle for Archipelago
 Kabuto Park (Demo)
-Keep Talking and Nobody Explodes
-Kingdom Hearts: Birth by Sleep Final Mix
-Kingdom Hearts: Chain of Memories (GBA)
-Kingdom Hearts: RE Chain of Memories
-Kirby 64 - The Crystal Shards
+Keep Talking and Nobody Explodes*/
+  {
+    name: "Kingdom Hearts: Birth by Sleep Final Mix",
+    img: "./character/kingdom_hearts.png",
+  },
+  {
+    name: "Kingdom Hearts: Chain of Memories (GBA)",
+    img: "./character/kingdom_hearts.png",
+  },
+  {
+    name: "Kingdom Hearts: RE Chain of Memories",
+    img: "./character/kingdom_hearts.png",
+  },
+  /*Kirby 64 - The Crystal Shards
 Kirby Super Star
 K-On! After School Live!!
 League of Legends
@@ -275,14 +286,13 @@ Luigi's Mansion
 */
   { name: "Mario is Missing (SNES)", img: "./character/super_mario.png" },
   /*Mega Man X4
-MetroCUBEvania
-
-*/
+MetroCUBEvania*/
   { name: "Metroid Fusion", img: "./character/metroid.png" },
   { name: "Metroid: Zero Mission", img: "./character/metroid.png" },
   { name: "Minecraft", img: "./character/minecraft.png" },
   { name: "Minecraft Dig", img: "./character/minecraft.png" },
-  /* Minishoot Adventures
+  { name: "Minishoot Adventures", img: "./character/minishoot.png" },
+  /* 
 Minit
 Momodora: Moonlit Farewell
 Monster Sanctuary
@@ -303,12 +313,16 @@ Pizza Tower
 Placid Plastic Duck Simulator
 Plants vs. Zombies: GOTY
 Plants vs. Zombies: Replanted
-Plateup!
-Pokémon FireRed and LeafGreen
-Pokémon Platinum
-Pokémon Black and White
-Pokémon Mystery Dungeon: Explorers of Sky
-PokéPark Wii: Pikachu's Adventure
+Plateup!*/
+  { name: "Pokémon FireRed and LeafGreen", img: "./character/pokemon.png" },
+  { name: "Pokémon Platinum", img: "./character/pokemon.png" },
+  { name: "Pokémon Black and White", img: "./character/pokemon.png" },
+  {
+    name: "Pokémon Mystery Dungeon: Explorers of Sky",
+    img: "./character/pokemon.png",
+  },
+  { name: "PokéPark Wii: Pikachu's Adventure", img: "./character/pokemon.png" },
+  /*
 Portal 2
 PowerWash Simulator
 Prodigal
@@ -330,12 +344,12 @@ The Simpsons: Hit & Run
 The Sims 4
 Slime Rancher
 Sly Cooper and the Thievius Raccoonus
-Sly 2: Band of Thieves
-Sonic the Hedgehog
-Sonic Adventure DX
-Sonic Heroes
-Sonic Rush
-SoulBlazer
+Sly 2: Band of Thieves*/
+  { name: "Sonic the Hedgehog", img: "./character/sonic.png" },
+  { name: "Sonic Adventure DX", img: "./character/sonic.png" },
+  { name: "Sonic Heroes", img: "./character/sonic.png" },
+  { name: "Sonic Rush", img: "./character/sonic.png" },
+  /*SoulBlazer
 A Space Archipelago
 Spelunker
 Spelunky 2
@@ -388,9 +402,13 @@ Final Fantasy IV: Free Enterprise
 Gauntlet Legends
 Glover
 Hades
-Hexcells Infinite
-Hollow Knight - Beta APWorld
-Loonyland: Halloween Hill*/
+Hexcells Infinite*/
+
+  {
+    name: "Hollow Knight - Beta APWorld",
+    img: "./character/hollow_knight .png",
+  },
+  //Loonyland: Halloween Hill
   { name: "Metroid Prime", img: "./character/metroid.png" },
   /*
 OpenRCT2
@@ -442,15 +460,16 @@ Peaks of Yore
 Peggle Deluxe
 Peggle Nights
 Pikuniku
-Pinball FX3
-Pokémon Crystal
-Resident Evil 2 Remake
+Pinball FX3*/
+  { name: "Pokémon Crystal", img: "./character/pokemon.png" },
+  /*Resident Evil 2 Remake
 Resident Evil 3 Remake
 Rogue Legacy
 Skul: The Hero Slayer
 Slay the Spire
-Sonic Riders
-Spongebob Squarepants: Battle for Bikini Bottom*/
+*/
+  { name: "Sonic Riders", img: "./character/sonic.png" },
+  //Spongebob Squarepants: Battle for Bikini Bottom
   {
     name: "Super Mario World: Spicy Mycena Waffles",
     img: "./character/super_mario.png",
