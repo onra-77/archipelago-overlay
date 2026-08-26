@@ -165,8 +165,9 @@ An Untitled Story
 Ape Escape
 Ape Escape 3
 Astalon: Tears of the Earth
-Axiom Verge
-Balatro
+Axiom Verge*/
+  { name: "Balatro", img: "./character/balatro.png" },
+  /*
 The Binding of Isaac: Repentance
 Bomberman Hero
 Brotato
@@ -324,9 +325,9 @@ Plateup!*/
     img: "./character/pokemon.png",
   },
   { name: "PokéPark Wii: Pikachu's Adventure", img: "./character/pokemon.png" },
-  /*Portal 2
-PowerWash Simulator
-Prodigal
+  //Portal 2
+  { name: "PowerWash Simulator", img: "./character/powerwash.png" },
+  /*Prodigal
 Pseudoregalia
 Rabi-Ribi
 Rain World
