@@ -484,5 +484,6 @@ Zork: Grand Inquisitor*/
   // UNSTABLE
 
   { name: "FEZ", img: "./character/fez.png" },
+  { name: "Forager", img: "./character/forager.png" },
 ];
 var AVATAR_IMG_DEFAULT = "./character/unknown.png";
