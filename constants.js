@@ -52,6 +52,7 @@ var AVATAR_IMG = [
 APQuest
 Aquaria*/
   { name: "Blasphemous", img: "./character/blasphemous.png" },
+  { name: "Bomb Rush Cyberfunk", img: "./character/bomb_rush.png" },
   /* Bomb Rush Cyberfunk
 Bumper Stickers
 Castlevania - Circle of the Moon
@@ -68,7 +69,6 @@ Castlevania 64*/
   { name: "DOOM II", img: "./character/doom.png" },
   { name: "Earthbound", img: "./character/earthbound.png" },
   { name: "Factorio", img: "./character/factorio.png" },
-
   //Faxanadu
   //Final Fantasy
   //Final Fantasy Mystic Quest
@@ -83,7 +83,7 @@ Castlevania 64*/
   },
   { name: "Kingdom Hearts", img: "./character/kingdom_hearts.png" },
   { name: "Kingdom Hearts 2", img: "./character/kingdom_hearts.png" },
-  //Kirby's Dream Land 3
+  { name: "Kirby's Dream Land 3", img: "./character/kirby.png" },
   //Landstalker - The Treasures of King Nole
   { name: "The Legend of Zelda", img: "./character/zelda_ocarina.png" },
   {
@@ -107,29 +107,27 @@ Castlevania 64*/
   //Lingo
   //Lufia II Ancient Cave
   { name: "Mario & Luigi Superstar Saga", img: "./character/super_mario.png" },
-  /*Mega Man 2
-Mega Man 3
-MegaMan Battle Network 3
-Meritous
-*/
+  { name: "Mega Man 2", img: "./character/megaman.png" },
+  { name: "Mega Man 3", img: "./character/megaman.png" },
+  { name: "MegaMan Battle Network 3", img: "./character/megaman.png" },
+  //Meritous
   { name: "The Messenger", img: "./character/the_messenger.png" },
   { name: "Muse Dash", img: "./character/muse_dash.png" },
   { name: "Noita", img: "./character/noita.png" },
   //Old School Runescape
-  //Overcooked! 2
+  { name: "Overcooked! 2", img: "./character/overcooked.png" },
   { name: "Paint", img: "./character/paint.png" },
   { name: "Pokemon Emerald", img: "./character/pokemon.png" },
   { name: "Pokemon Red and Blue", img: "./character/pokemon.png" },
   { name: "Raft", img: "./character/raft.png" },
   { name: "Risk of Rain 2", img: "./character/risk_of_rain.png" },
   { name: "Satisfactory", img: "./character/satisfactory.png" },
-  /*
-Saving Princess
-Secret of Evermore
-shapez
-Shivers
-A Short Hike
-SMZ3*/
+  /*Saving Princess
+Secret of Evermore*/
+  { name: "shapez", img: "./character/shapez.png" },
+  //Shivers
+  { name: "A Short Hike", img: "./character/short_hike.png" },
+  { name: "SMZ3", img: "./character/SMZ3.png" },
   { name: "Sonic Adventure 2 Battle", img: "./character/sonic.png" },
   { name: "Starcraft 2", img: "./character/starcraft.png" },
   { name: "Stardew Valley", img: "./character/stardew_valley.png" },
@@ -142,16 +140,17 @@ SMZ3*/
   { name: "Super Mario World", img: "./character/super_mario.png" },
   { name: "Super Metroid", img: "./character/metroid.png" },
   { name: "Terraria", img: "./character/terraria.png" },
-  //Timespinner
+  { name: "Timespinner", img: "./character/timespinner.png" },
   { name: "TUNIC", img: "./character/tunic.png" },
   { name: "Undertale", img: "./character/undertale.png" },
   //VVVVVV
   //Wargroove
   { name: "The Witness", img: "./character/witness.png" },
   { name: "Yacht Dice", img: "./character/dice.png" },
-  /*Yoshi's Island
-Yu-Gi-Oh! 2006
-Zillion*/
+  //Yoshi's Island
+  { name: "Yu-Gi-Oh! 2006", img: "./character/yu_gi_oh.png" },
+
+  //Zillion
 
   //STABLE
 
@@ -188,8 +187,7 @@ CornKidz64
 CrossCode
 Crystalis*/
   { name: "Cuphead", img: "./character/cuphead.png" },
-  /*
-A Dance Of Fire And Ice
+  /*A Dance Of Fire And Ice
 Dark Cloud 1
 Dark Souls II
 Deep Rock Galactic
@@ -242,9 +240,15 @@ Keep Talking and Nobody Explodes*/
     name: "Kingdom Hearts: RE Chain of Memories",
     img: "./character/kingdom_hearts.png",
   },
-  /*Kirby 64 - The Crystal Shards
-Kirby Super Star
-K-On! After School Live!!
+  {
+    name: "Kirby 64 - The Crystal Shards",
+    img: "./character/kirby.png",
+  },
+  {
+    name: "Kirby Super Star",
+    img: "./character/kirby.png",
+  },
+  /*K-On! After School Live!!
 League of Legends
 LADX Beta*/
   {
@@ -282,18 +286,16 @@ LADX Beta*/
   /*Lego Star Wars: The Complete Saga
 Lingo 2
 Little Witch Nobeta
-Luigi's Mansion
-*/
+Luigi's Mansion*/
   { name: "Mario is Missing (SNES)", img: "./character/super_mario.png" },
-  /*Mega Man X4
-MetroCUBEvania*/
+  { name: "Mega Man X4", img: "./character/megaman.png" },
+  //MetroCUBEvania
   { name: "Metroid Fusion", img: "./character/metroid.png" },
   { name: "Metroid: Zero Mission", img: "./character/metroid.png" },
   { name: "Minecraft", img: "./character/minecraft.png" },
   { name: "Minecraft Dig", img: "./character/minecraft.png" },
   { name: "Minishoot Adventures", img: "./character/minishoot.png" },
-  /* 
-Minit
+  /* Minit
 Momodora: Moonlit Farewell
 Monster Sanctuary
 Noita - Enemysanity
@@ -322,8 +324,7 @@ Plateup!*/
     img: "./character/pokemon.png",
   },
   { name: "PokéPark Wii: Pikachu's Adventure", img: "./character/pokemon.png" },
-  /*
-Portal 2
+  /*Portal 2
 PowerWash Simulator
 Prodigal
 Pseudoregalia
@@ -389,10 +390,10 @@ Yu-Gi-Oh! Forbidden Memories*/
     name: "Zelda 2: The Adventure of Link",
     img: "./character/zelda_ocarina.png",
   },
-
-  /*Anno 1800*/
+  //Anno 1800
 
   //STABLE IN REVIEW
+
   /*Autopelago
 Banjo-Tooie
 BK Simulator
@@ -403,15 +404,13 @@ Gauntlet Legends
 Glover
 Hades
 Hexcells Infinite*/
-
   {
     name: "Hollow Knight - Beta APWorld",
     img: "./character/hollow_knight .png",
   },
   //Loonyland: Halloween Hill
   { name: "Metroid Prime", img: "./character/metroid.png" },
-  /*
-OpenRCT2
+  /*OpenRCT2
 Psychonauts
 Scooby-Doo! Night of 100 Frights
 Shellipelago
@@ -449,10 +448,10 @@ Huniepop 2: Double Date
 Kindergarten 2
 Lunacid*/
   { name: "Mario Kart: Double Dash", img: "./character/super_mario.png" },
-  /*Mega Man X
-Mega Man X2
-Mega Man X3
-Nine Sols
+  { name: "Mega Man X", img: "./character/megaman.png" },
+  { name: "Mega Man X2", img: "./character/megaman.png" },
+  { name: "Mega Man X3", img: "./character/megaman.png" },
+  /*Nine Sols
 osu!*/
   { name: "Outer Wilds", img: "./character/outer_wilds.png" },
   /* Path of Exile
