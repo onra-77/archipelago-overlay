@@ -406,7 +406,7 @@ Hades
 Hexcells Infinite*/
   {
     name: "Hollow Knight - Beta APWorld",
-    img: "./character/hollow_knight .png",
+    img: "./character/hollow_knight.png",
   },
   //Loonyland: Halloween Hill
   { name: "Metroid Prime", img: "./character/metroid.png" },
