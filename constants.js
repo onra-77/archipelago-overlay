@@ -147,7 +147,7 @@ Secret of Evermore*/
   //Wargroove
   { name: "The Witness", img: "./character/witness.png" },
   { name: "Yacht Dice", img: "./character/dice.png" },
-  //Yoshi's Island
+  { name: "Yoshi's Island", img: "./character/yoshi.png" },
   { name: "Yu-Gi-Oh! 2006", img: "./character/yu_gi_oh.png" },
 
   //Zillion
@@ -156,9 +156,9 @@ Secret of Evermore*/
 
   /*ActRaiser
 A Difficult Game About Climbing
-Against the Storm
-Age of Mythology: Retold
-Air Delivery
+Against the Storm*/
+  { name: "Age of Mythology: Retold", img: "./character/mythology.png" },
+  /*Air Delivery
 Anodyne
 Another Crab's Treasure
 An Untitled Story
@@ -167,17 +167,18 @@ Ape Escape 3
 Astalon: Tears of the Earth
 Axiom Verge*/
   { name: "Balatro", img: "./character/balatro.png" },
+  { name: "The Binding of Isaac: Repentance", img: "./character/isaac.png" },
+  { name: "Bomberman Hero", img: "./character/bomberman.png" },
+  { name: "Brotato", img: "./character/brotato.png" },
+  { name: "Buckshot Roulette", img: "./character/buckshot.png" },
   /*
-The Binding of Isaac: Repentance
-Bomberman Hero
-Brotato
-Buckshot Roulette
 Castlevania: Dawn of Sorrow
 Castlevania: Harmony of Dissonance
 Castlevania: Legacy of Darkness
 Castlevania: Symphony of the Night
-Cavern of Dreams
-Cave Story
+Cavern of Dreams*/
+  { name: "Cave Story", img: "./character/cave_story.png" },
+  /*
 Chrono Trigger: Jets of Time
 Citadel (Luanti)
 Civilization V
@@ -190,10 +191,10 @@ Crystalis*/
   { name: "Cuphead", img: "./character/cuphead.png" },
   /*A Dance Of Fire And Ice
 Dark Cloud 1
-Dark Souls II
-Deep Rock Galactic
-DELTARUNE
-Diddy Kong Racing
+Dark Souls II*/
+  { name: "Deep Rock Galactic", img: "./character/deep_rock.png" },
+  { name: "DELTARUNE", img: "./character/deltarune.png" },
+  /*Diddy Kong Racing
 Dome Keeper*/
   { name: "Donkey Kong 64", img: "./character/donkey_kong.png" },
   /*Door to Door Door Salesman
@@ -210,12 +211,15 @@ Final Fantasy XII: Trial Mode
 Final Fantasy Tactics Advance
 Final Fantasy Tactics A2: Grimoire of the Rift
 Final Fantasy Tactics: Ivalice Island (FFT PSX)
-Fire Emblem: The Sacred Stones
-FNAF World
-Gato Roboto
-Gato Roboto B-Side
-Getting Over It with Bennett Foddy
-GLYPHS
+Fire Emblem: The Sacred Stones*/
+  { name: "FNAF World", img: "./character/fnaf.png" },
+  /*Gato Roboto
+Gato Roboto B-Side*/
+  {
+    name: "Getting Over It with Bennett Foddy",
+    img: "./character/getting_over.png",
+  },
+  /*GLYPHS
 Golden Sun: The Lost Age
 Grim Dawn
 The Grinch
@@ -227,8 +231,11 @@ Iji
 Isles of Sea and Sky
 Ittle Dew 2+
 Jigsaw Puzzle for Archipelago
-Kabuto Park (Demo)
-Keep Talking and Nobody Explodes*/
+Kabuto Park (Demo)*/
+  {
+    name: "Keep Talking and Nobody Explodes",
+    img: "./character/keep_talking.png",
+  },
   {
     name: "Kingdom Hearts: Birth by Sleep Final Mix",
     img: "./character/kingdom_hearts.png",
@@ -249,9 +256,12 @@ Keep Talking and Nobody Explodes*/
     name: "Kirby Super Star",
     img: "./character/kirby.png",
   },
-  /*K-On! After School Live!!
-League of Legends
-LADX Beta*/
+  //K-On! After School Live!!
+  {
+    name: "League of Legends",
+    img: "./character/league_legends.png",
+  },
+  //LADX Beta
   {
     name: "The Legend of Zelda: A Link Between Worlds",
     img: "./character/zelda_ocarina.png",
@@ -284,11 +294,20 @@ LADX Beta*/
     name: "The Legend of Zelda: Skyward Sword",
     img: "./character/zelda_ocarina.png",
   },
-  /*Lego Star Wars: The Complete Saga
+  {
+    name: "The Legend of Zelda: Skyward Sword",
+    img: "./character/zelda_ocarina.png",
+  },
+  {
+    name: "Lego Star Wars: The Complete Saga",
+    img: "./character/star_wars_lego.png",
+  },
+  /*
 Lingo 2
 Little Witch Nobeta
-Luigi's Mansion*/
-  { name: "Mario is Missing (SNES)", img: "./character/super_mario.png" },
+*/
+  { name: "Luigi's Mansion", img: "./character/luigi.png" },
+  { name: "Mario is Missing (SNES)", img: "./character/luigi.png" },
   { name: "Mega Man X4", img: "./character/megaman.png" },
   //MetroCUBEvania
   { name: "Metroid Fusion", img: "./character/metroid.png" },
@@ -300,23 +319,27 @@ Luigi's Mansion*/
 Momodora: Moonlit Farewell
 Monster Sanctuary
 Noita - Enemysanity
-Nonograhmm
-Ori and the Blind Forest
-Ori and the Will of the Wisps
-Oxygen Not Included*/
+Nonograhmm*/
+  { name: "Ori and the Blind Forest", img: "./character/ori.png" },
+  { name: "Ori and the Will of the Wisps", img: "./character/ori.png" },
+  //Oxygen Not Included
   { name: "Paper Mario 64", img: "./character/super_mario.png" },
   {
     name: "Paper Mario: The Thousand Year Door",
     img: "./character/super_mario.png",
   },
-  /*Parkitect
-PEAK
-Piranesi Restoration Project (Luanti)
-Pizza Tower
-Placid Plastic Duck Simulator
-Plants vs. Zombies: GOTY
-Plants vs. Zombies: Replanted
-Plateup!*/
+  //Parkitect
+  { name: "PEAK", img: "./character/peak.png" },
+  //Piranesi Restoration Project (Luanti)
+  { name: "Pizza Tower", img: "./character/pizza_tower.png" },
+
+  //Placid Plastic Duck Simulator
+  { name: "Plants vs. Zombies: GOTY", img: "./character/plant_zombie.png" },
+  {
+    name: "Plants vs. Zombies: Replanted",
+    img: "./character/plant_zombie.png",
+  },
+  { name: "Plateup!", img: "./character/plateup.png" },
   { name: "Pokémon FireRed and LeafGreen", img: "./character/pokemon.png" },
   { name: "Pokémon Platinum", img: "./character/pokemon.png" },
   { name: "Pokémon Black and White", img: "./character/pokemon.png" },
@@ -325,28 +348,35 @@ Plateup!*/
     img: "./character/pokemon.png",
   },
   { name: "PokéPark Wii: Pikachu's Adventure", img: "./character/pokemon.png" },
-  //Portal 2
+  { name: "Portal 2", img: "./character/portal.png" },
   { name: "PowerWash Simulator", img: "./character/powerwash.png" },
   /*Prodigal
 Pseudoregalia
-Rabi-Ribi
-Rain World
-Ratchet & Clank 2: Going Commando
-Ratchet & Clank 3: Up Your Arsenal
-Rayman 2: The Great Escape
-Refunct
+Rabi-Ribi*/
+  { name: "Rain World", img: "./character/rain_world.png" },
+
+  { name: "Ratchet & Clank 2: Going Commando", img: "./character/ratchet.png" },
+  {
+    name: "Ratchet & Clank 3: Up Your Arsenal",
+    img: "./character/ratchet.png",
+  },
+  { name: "Rayman 2: The Great Escape", img: "./character/rayman.png" },
+  /*Refunct
 Reventure
 Rift of the Necrodancer
 Rift Wizard
 Rusted Moss
-Sentinels of the Multiverse
-Shadow the Hedgehog
-Simon Tatham's Portable Puzzle Collection
-The Simpsons: Hit & Run
-The Sims 4
-Slime Rancher
-Sly Cooper and the Thievius Raccoonus
-Sly 2: Band of Thieves*/
+Sentinels of the Multiverse*/
+  { name: "Shadow the Hedgehog", img: "./character/shadow.png" },
+  //Simon Tatham's Portable Puzzle Collection
+  { name: "The Simpsons: Hit & Run", img: "./character/simpson.png" },
+  { name: "The Sims 4", img: "./character/sims.png" },
+  { name: "Slime Rancher", img: "./character/slime_rancher.png" },
+  {
+    name: "Sly Cooper and the Thievius Raccoonus",
+    img: "./character/sly_cooper.png",
+  },
+  { name: "Sly 2: Band of Thieves", img: "./character/sly_cooper.png" },
   { name: "Sonic the Hedgehog", img: "./character/sonic.png" },
   { name: "Sonic Adventure DX", img: "./character/sonic.png" },
   { name: "Sonic Heroes", img: "./character/sonic.png" },
@@ -358,9 +388,10 @@ Spelunky 2
 Spinball
 Spyro 2: Ripto's Rage
 Spyro 3: Year of the Dragon
-Stacklands
-Star Fox 64
-Super Cat Planet
+Stacklands*/
+  { name: "Star Fox 64", img: "./character/star_fox.png" },
+
+  /*Super Cat Planet
 Super Junkoid
 Super Smash Bros. Melee
 System Shock 2
@@ -381,12 +412,12 @@ Watery Words
 The WereCleaner
 Wordipelago
 XCOM 2: War of the Chosen
-Yacht Dice Bliss
-Yellow Taxi Goes Vroom
-Yooka-Laylee
-YS VIII: Lacrimosa of Dana
-Yu-Gi-Oh! Dungeon Dice Monsters
-Yu-Gi-Oh! Forbidden Memories*/
+Yacht Dice Bliss*/
+  { name: "Yellow Taxi Goes Vroom", img: "./character/yellow_taxi.png" },
+  /*Yooka-Laylee
+YS VIII: Lacrimosa of Dana*/
+  { name: "Yu-Gi-Oh! Dungeon Dice Monsters", img: "./character/yu_gi_oh.png" },
+  { name: "Yu-Gi-Oh! Forbidden Memories", img: "./character/yu_gi_oh.png" },
   {
     name: "Zelda 2: The Adventure of Link",
     img: "./character/zelda_ocarina.png",
@@ -395,39 +426,39 @@ Yu-Gi-Oh! Forbidden Memories*/
 
   //STABLE IN REVIEW
 
-  /*Autopelago
-Banjo-Tooie
-BK Simulator
-Candy Box 2
-ChecksMate (Chess)
-Final Fantasy IV: Free Enterprise
+  //Autopelago
+  { name: "Banjo-Tooie", img: "./character/banjo_kazooie.png" },
+  /*BK Simulator
+Candy Box 2*/
+  { name: "ChecksMate (Chess)", img: "./character/chess.png" },
+  /*Final Fantasy IV: Free Enterprise
 Gauntlet Legends
-Glover
-Hades
-Hexcells Infinite*/
+Glover*/
+  { name: "Hades", img: "./character/hades.png" },
+  //Hexcells Infinite
   {
     name: "Hollow Knight - Beta APWorld",
     img: "./character/hollow_knight.png",
   },
   //Loonyland: Halloween Hill
   { name: "Metroid Prime", img: "./character/metroid.png" },
-  /*OpenRCT2
-Psychonauts
-Scooby-Doo! Night of 100 Frights
+  //OpenRCT2
+  { name: "Psychonauts", img: "./character/psychonauts.png" },
+  /*Scooby-Doo! Night of 100 Frights
 Shellipelago
-Stick Ranger
-Trackmania
-Void Sols
+Stick Ranger*/
+  { name: "Trackmania", img: "./character/trackmania.png" },
+  /*Void Sols
 Wargroove 2
 Wario Land 4*/
 
   //STABLE NOT PRING
 
-  /*ANIMAL WELL
-Archipeladoku (Sudoku)
-Bloons Tower Defense 6
-Clique
-Cowtastic Cafe
+  { name: "ANIMAL WELL", img: "./character/animal_well.png" },
+  { name: "Archipeladoku (Sudoku)", img: "./character/sudoku.png" },
+  //Bloons Tower Defense 6
+  { name: "Clique", img: "./character/clique.png" },
+  /*Cowtastic Cafe
 Crystal Project
 Dead Rising Deluxe Remastered*/
   { name: "Donkey Kong Country", img: "./character/donkey_kong.png" },
@@ -435,15 +466,21 @@ Dead Rising Deluxe Remastered*/
     name: "Donkey Kong Country 2: Diddy's Kong Quest",
     img: "./character/donkey_kong.png",
   },
-  /*Don't Starve Together
+  { name: "Don't Starve Together", img: "./character/dont_starve.png" },
+  /*
 Dracomino
 Dragon Warrior
-The Elder Scrolls IV: Oblivion Remastered
-Flipwitch
+*/
+  {
+    name: "The Elder Scrolls IV: Oblivion Remastered",
+    img: "./character/oblivion.png",
+  },
+  /*Flipwitch
 Frogmonster
-Funi Raccoon Game
-Garfield Kart: Furious Racing
-The Guardian Legend
+Funi Raccoon Game*/
+  { name: "Garfield Kart: Furious Racing", img: "./character/garfield.png" },
+
+  /*The Guardian Legend
 Huniepop
 Huniepop 2: Double Date
 Kindergarten 2
@@ -456,11 +493,11 @@ Lunacid*/
 osu!*/
   { name: "Outer Wilds", img: "./character/outer_wilds.png" },
   /* Path of Exile
-Peaks of Yore
-Peggle Deluxe
-Peggle Nights
-Pikuniku
-Pinball FX3*/
+Peaks of Yore*/
+  { name: "Peggle Deluxe", img: "./character/peggle.png" },
+  { name: "Peggle Nights", img: "./character/peggle.png" },
+  { name: "Pikuniku", img: "./character/pikuniku.png" },
+  //Pinball FX3
   { name: "Pokémon Crystal", img: "./character/pokemon.png" },
   /*Resident Evil 2 Remake
 Resident Evil 3 Remake
@@ -469,16 +506,23 @@ Skul: The Hero Slayer
 Slay the Spire
 */
   { name: "Sonic Riders", img: "./character/sonic.png" },
-  //Spongebob Squarepants: Battle for Bikini Bottom
+  {
+    name: "Spongebob Squarepants: Battle for Bikini Bottom",
+    img: "./character/spongebob.png",
+  },
   {
     name: "Super Mario World: Spicy Mycena Waffles",
     img: "./character/super_mario.png",
   },
-  /*Tony Hawk's Pro Skater 1 + 2
+  {
+    name: "Tony Hawk's Pro Skater 1 + 2",
+    img: "./character/tony_hawk.png",
+  },
+  /*
 Touhou Koumakyou: The Embodiment of Scarlet Devil
-Touhou Youyoumu ~ Perfect Cherry Blossom
-ULTRAKILL
-Unfair Flips
+Touhou Youyoumu ~ Perfect Cherry Blossom*/
+  { name: "ULTRAKILL", img: "./character/ultrakill.png" },
+  /*Unfair Flips
 Zork: Grand Inquisitor*/
 
   // UNSTABLE
