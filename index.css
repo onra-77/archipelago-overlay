@@ -90,6 +90,7 @@ tt {
   font-size: 1.8em;
   top: 10px;
   filter: drop-shadow(5px 1px 4px var(--shadow-color));
+  line-height: 1;
 }
 
 .text-player {
@@ -107,11 +108,13 @@ tt {
   color: white;
   font-size: 1em;
   font-weight: 500;
+  line-height: 1;
 }
 
 .text-location {
   color: white;
   font-size: 1.1em;
+  line-height: 1;
 }
 
 .recolor {
