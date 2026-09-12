@@ -16,6 +16,7 @@ $(document).ready(function () {
   let player = params.get("player");
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10;
+  let test = params.has("test");
 
   $("#holdTime").on("change", function () {
     let value = $("#holdTime").val();
@@ -86,6 +87,12 @@ $(document).ready(function () {
       setTimeout(() => wipeTopMessage(elementId), holdTime * 1000);
       setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
     }
+  }
+
+  if (test) {
+    $("#error").hide();
+    $("#login").hide();
+    $("#settings").hide();
   }
 
   //login logic
