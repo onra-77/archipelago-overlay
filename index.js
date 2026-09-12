@@ -169,10 +169,9 @@ $(document).ready(function () {
     }
 
     window.location.search = params;
-
-    let newUrl = window.location.href;
+    /*let newUrl = window.location.search;
     navigator.clipboard.writeText(newUrl);
-    alert("URL copié dans le presse papier: " + newUrl);
+    alert("URL copié dans le presse papier: " + newUrl);*/
 
     login();
   });
