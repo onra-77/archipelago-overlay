@@ -24,6 +24,10 @@ $(document).ready(function () {
     showGameName: !params.has("hideGameName"),
     showItemName: !params.has("hideItemName"),
     showArrow: !params.has("hideArrow"),
+    showFiller: !params.has("hideFiller"),
+    showUseful: !params.has("hideUseful"),
+    showProgression: !params.has("hideProgression"),
+    showTrap: !params.has("hideTrap"),
   };
 
   //settings
@@ -53,6 +57,19 @@ $(document).ready(function () {
     settings.showArrow = $("#showArrow").is(":checked");
   });
 
+  $("#showFiller").on("change", function () {
+    settings.showFiller = $("#showFiller").is(":checked");
+  });
+  $("#showUseful").on("change", function () {
+    settings.showUseful = $("#showUseful").is(":checked");
+  });
+  $("#showProgression").on("change", function () {
+    settings.showProgression = $("#showProgression").is(":checked");
+  });
+  $("#showTrap").on("change", function () {
+    settings.showTrap = $("#showTrap").is(":checked");
+  });
+
   //Functions
   function log(message) {
     console.log("AP message: " + message);
@@ -65,6 +82,19 @@ $(document).ready(function () {
   }
 
   function processMessage(item) {
+    if (!settings.showFiller && item.filler) {
+      return;
+    }
+    if (!settings.showUseful && item.useful) {
+      return;
+    }
+    if (!settings.showProgression && item.progression) {
+      return;
+    }
+    if (!settings.showTrap && item.trap) {
+      return;
+    }
+
     let player1 = item.sender;
     let player2 = item.receiver;
     let itemName = item.name;
@@ -100,7 +130,18 @@ $(document).ready(function () {
     let game2 = AVATAR_IMG.random().name;
     let item = FAKE_ITEMS.random();
     let location = FAKE_LOCATIONS.random();
-    let useful = ["progression", "useful", "trap", "filler"].random();
+    let usefulness = [];
+    if (settings.showFiller) usefulness.append("filler");
+    if (settings.showUseful) usefulness.append("useful");
+    if (settings.showProgression) usefulness.append("progression");
+    if (settings.showTrap) usefulness.append("trap");
+    if (usefulness.length == 0) {
+      if (loginMode) {
+        setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
+      }
+      return;
+    }
+    let useful = usefulness.random();
     let element = getTransactionElement(
       location,
       player1,
@@ -196,6 +237,24 @@ $(document).ready(function () {
     } else if (holdTime) {
       error("Invalid hold time, must be a number");
       return;
+    }
+
+    for (let key in settings) {
+      if (settings[key] == false) {
+        let paramMap = {
+          showLocation: "hideLocation",
+          showAvatar: "hideAvatar",
+          showPlayerName: "hidePlayerName",
+          showGameName: "hideGameName",
+          showItemName: "hideItemName",
+          showArrow: "hideArrow",
+          showFiller: "hideFiller",
+          showUseful: "hideUseful",
+          showProgression: "hideProgression",
+          showTrap: "hideTrap",
+        };
+        params.append(paramMap[key]);
+      }
     }
 
     window.location.search = params;
