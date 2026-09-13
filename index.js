@@ -109,6 +109,7 @@ $(document).ready(function () {
       useful,
       player2,
       game2,
+      settings,
     );
     let elementId = $(element).attr("id");
     if (loginMode) {
