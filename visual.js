@@ -24,6 +24,7 @@ function getTransactionElement(
   itemColor,
   player2,
   game2,
+  settings,
 ) {
   let avatar1 = AVATAR_IMG.filter((avatar) => avatar.name == game1);
   let img1 = avatar1.length > 0 ? avatar1[0].img : AVATAR_IMG_DEFAULT;
@@ -36,19 +37,39 @@ function getTransactionElement(
   let element = transactionTemplate.clone();
   $(element).attr("id", "message" + count);
   count++;
-  $(element).find("#location").text(location);
-  $(element).find("#player1 #name").text(player1);
-  $(element).find("#player1 #game").text(game1);
-  $(element).find("#player1 img").attr("src", img1);
+  $(element)
+    .find("#location")
+    .text(settings.showLocation ? location : "");
+  $(element)
+    .find("#player1 #name")
+    .text(settings.showPlayerName ? player1 : "");
+  $(element)
+    .find("#player1 #game")
+    .text(settings.showGameName ? game1 : "");
+
+  $(element)
+    .find("#player1 img")
+    .attr("src", settings.showAvatar ? img1 : "");
   $(element).find("#player1 .shadow-color").css("--shadow-color", color1);
-  $(element).find("#item div").text(item);
+  $(element)
+    .find("#item div")
+    .text(settings.showItemName ? item : "");
   $(element)
     .find("#item div")
     .css("--shadow-color", ITEM_TEXT_COLOR[itemColor]);
   $(element).find(".recolor").css("--recolor", ITEM_COLOR[itemColor]);
-  $(element).find("#player2 #name").text(player2);
-  $(element).find("#player2 #game").text(game2);
-  $(element).find("#player2 img").attr("src", img2);
+  if (!settings.showArrow) {
+    $(element).find("#item img").hide();
+  }
+  $(element)
+    .find("#player2 #name")
+    .text(settings.showPlayerName ? player2 : "");
+  $(element)
+    .find("#player2 #game")
+    .text(settings.showGameName ? game2 : "");
+  $(element)
+    .find("#player2 img")
+    .attr("src", settings.showAvatar ? img2 : "");
   $(element).find("#player2 .shadow-color").css("--shadow-color", color2);
   $(element).addClass("enter");
   return element;

@@ -17,12 +17,40 @@ $(document).ready(function () {
   let password = params.get("password");
   let holdTime = params.get("holdtime") ?? 10;
   let test = params.has("test");
+  var settings = {
+    showLocation: !params.has("hideLocation"),
+    showAvatar: !params.has("hideAvatar"),
+    showPlayerName: !params.has("hidePlayerName"),
+    howGameName: !params.has("hideGameName"),
+    showItemName: !params.has("hideItemName"),
+    showArrow: !params.has("hideArrow"),
+  };
 
+  //settings
   $("#holdTime").on("change", function () {
     let value = $("#holdTime").val();
     if (!isNaN(value)) {
       holdTime = value;
     }
+  });
+
+  $("#showLocation").on("change", function () {
+    settings.showLocation = $("#showLocation").attr("checked");
+  });
+  $("#showAvatar").on("change", function () {
+    settings.showAvatar = $("#showAvatar").attr("checked");
+  });
+  $("#showPlayerName").on("change", function () {
+    settings.showPlayerName = $("#showPlayerName").attr("checked");
+  });
+  $("#showGameName").on("change", function () {
+    settings.showGameName = $("#showGameName").attr("checked");
+  });
+  $("#showItemName").on("change", function () {
+    settings.showItemName = $("#showItemName").attr("checked");
+  });
+  $("#showArrow").on("change", function () {
+    settings.showArrow = $("#showArrow").attr("checked");
   });
 
   //Functions
@@ -58,6 +86,7 @@ $(document).ready(function () {
       useful,
       player2.name,
       game2,
+      settings,
     );
     let elementId = $(element).attr("id");
     $("#transactionList").append(element);
