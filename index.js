@@ -131,10 +131,10 @@ $(document).ready(function () {
     let item = FAKE_ITEMS.random();
     let location = FAKE_LOCATIONS.random();
     let usefulness = [];
-    if (settings.showFiller) usefulness.append("filler");
-    if (settings.showUseful) usefulness.append("useful");
-    if (settings.showProgression) usefulness.append("progression");
-    if (settings.showTrap) usefulness.append("trap");
+    if (settings.showFiller) usefulness.push("filler");
+    if (settings.showUseful) usefulness.push("useful");
+    if (settings.showProgression) usefulness.push("progression");
+    if (settings.showTrap) usefulness.push("trap");
     if (usefulness.length == 0) {
       if (loginMode) {
         setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
