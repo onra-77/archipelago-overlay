@@ -21,7 +21,7 @@ $(document).ready(function () {
     showLocation: !params.has("hideLocation"),
     showAvatar: !params.has("hideAvatar"),
     showPlayerName: !params.has("hidePlayerName"),
-    howGameName: !params.has("hideGameName"),
+    showGameName: !params.has("hideGameName"),
     showItemName: !params.has("hideItemName"),
     showArrow: !params.has("hideArrow"),
   };
@@ -35,22 +35,22 @@ $(document).ready(function () {
   });
 
   $("#showLocation").on("change", function () {
-    settings.showLocation = $("#showLocation").attr("checked");
+    settings.showLocation = $("#showLocation").is(":checked");
   });
   $("#showAvatar").on("change", function () {
-    settings.showAvatar = $("#showAvatar").attr("checked");
+    settings.showAvatar = $("#showAvatar").is(":checked");
   });
   $("#showPlayerName").on("change", function () {
-    settings.showPlayerName = $("#showPlayerName").attr("checked");
+    settings.showPlayerName = $("#showPlayerName").is(":checked");
   });
   $("#showGameName").on("change", function () {
-    settings.showGameName = $("#showGameName").attr("checked");
+    settings.showGameName = $("#showGameName").is(":checked");
   });
   $("#showItemName").on("change", function () {
-    settings.showItemName = $("#showItemName").attr("checked");
+    settings.showItemName = $("#showItemName").is(":checked");
   });
   $("#showArrow").on("change", function () {
-    settings.showArrow = $("#showArrow").attr("checked");
+    settings.showArrow = $("#showArrow").is(":checked");
   });
 
   //Functions
