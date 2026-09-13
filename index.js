@@ -4,6 +4,25 @@ Array.prototype.random = function () {
   return this[Math.floor(Math.random() * this.length)];
 };
 
+async function copyToClipboard(text) {
+  try {
+    // Méthode moderne
+    await navigator.clipboard.writeText(text);
+  } catch (err) {
+    // Fallback Chrome / Firefox
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    document.execCommand("copy");
+    textarea.remove();
+  }
+}
+
 $(document).ready(function () {
   $("#error").hide();
 
@@ -257,10 +276,15 @@ $(document).ready(function () {
       }
     }
 
-    window.location.search = params;
-    let newUrl = window.location.href + "?" + params.toString();
-    navigator.clipboard.writeText(newUrl);
-    alert("URL copié dans le presse papier: " + newUrl);
+    const url = new URL(window.location.href);
+    url.search = params.toString();
+    const newUrl = url.toString();
+
+    copyToClipboard(newUrl).then(() => {
+      alert("URL copiée dans le presse-papier : " + newUrl);
+      window.location.search = params;
+    });
+
     login();
   });
 
