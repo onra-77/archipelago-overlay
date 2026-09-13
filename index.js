@@ -280,12 +280,13 @@ $(document).ready(function () {
     url.search = params.toString();
     const newUrl = url.toString();
 
-    copyToClipboard(newUrl).then(() => {
-      alert("URL copiée dans le presse-papier : " + newUrl);
-      window.location.search = params;
-    });
-
-    login();
+    copyToClipboard(newUrl)
+      .then(() => {
+        alert("URL copiée dans le presse-papier : " + newUrl);
+        window.location.search = params;
+        login();
+      })
+      .catch((err) => error(err));
   });
 
   function login() {
