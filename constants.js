@@ -33,6 +33,9 @@ var FAKE_ITEMS = [
   "Machine Gun",
   "Sandwich",
   "Diamond armor",
+  "An exquisite set of construction block",
+  "Your favorite brand of cereal",
+  "The last slice of pizza",
 ];
 
 var FAKE_LOCATIONS = [
@@ -44,19 +47,24 @@ var FAKE_LOCATIONS = [
   "Behind the lovely bush at the left of entrance door",
   "Soup store",
   "Solve crosswords",
+  "On the floor",
+  "Hidden chest",
+  "Craft a pickaxe",
+  "Uncovering the secret of the island",
+  "Right before the end of the world",
+  "Inside the omegatronosphere",
 ];
 
 var AVATAR_IMG = [
   //CORE
-  /*  Adventure
-APQuest
-Aquaria*/
+  //Adventure
+  //APQuest
+  //Aquaria
   { name: "Blasphemous", img: "./character/blasphemous.png" },
   { name: "Bomb Rush Cyberfunk", img: "./character/bomb_rush.png" },
-  /* Bomb Rush Cyberfunk
-Bumper Stickers
-Castlevania - Circle of the Moon
-Castlevania 64*/
+  //Bumper Stickers
+  //Castlevania - Circle of the Moon
+  //Castlevania 64
   { name: "Celeste (Open World)", img: "./character/celeste.png" },
   { name: "Celeste 64", img: "./character/celeste.png" },
   { name: "ChecksFinder", img: "./character/minesweeper.png" },
@@ -122,8 +130,8 @@ Castlevania 64*/
   { name: "Raft", img: "./character/raft.png" },
   { name: "Risk of Rain 2", img: "./character/risk_of_rain.png" },
   { name: "Satisfactory", img: "./character/satisfactory.png" },
-  /*Saving Princess
-Secret of Evermore*/
+  //Saving Princess
+  //Secret of Evermore
   { name: "shapez", img: "./character/shapez.png" },
   //Shivers
   { name: "A Short Hike", img: "./character/short_hike.png" },
@@ -149,14 +157,13 @@ Secret of Evermore*/
   { name: "Yacht Dice", img: "./character/dice.png" },
   { name: "Yoshi's Island", img: "./character/yoshi.png" },
   { name: "Yu-Gi-Oh! 2006", img: "./character/yu_gi_oh.png" },
-
   //Zillion
 
   //STABLE
 
-  /*ActRaiser
-A Difficult Game About Climbing
-Against the Storm*/
+  //ActRaiser
+  //A Difficult Game About Climbing
+  //Against the Storm
   { name: "Age of Mythology: Retold", img: "./character/mythology.png" },
   /*Air Delivery
 Anodyne
@@ -171,15 +178,13 @@ Axiom Verge*/
   { name: "Bomberman Hero", img: "./character/bomberman.png" },
   { name: "Brotato", img: "./character/brotato.png" },
   { name: "Buckshot Roulette", img: "./character/buckshot.png" },
-  /*
-Castlevania: Dawn of Sorrow
+  /* Castlevania: Dawn of Sorrow
 Castlevania: Harmony of Dissonance
 Castlevania: Legacy of Darkness
 Castlevania: Symphony of the Night
 Cavern of Dreams*/
   { name: "Cave Story", img: "./character/cave_story.png" },
-  /*
-Chrono Trigger: Jets of Time
+  /* Chrono Trigger: Jets of Time
 Citadel (Luanti)
 Civilization V
 CloverPit
@@ -194,8 +199,8 @@ Dark Cloud 1
 Dark Souls II*/
   { name: "Deep Rock Galactic", img: "./character/deep_rock.png" },
   { name: "DELTARUNE", img: "./character/deltarune.png" },
-  /*Diddy Kong Racing
-Dome Keeper*/
+  //Diddy Kong Racing
+  //Dome Keeper
   { name: "Donkey Kong 64", img: "./character/donkey_kong.png" },
   /*Door to Door Door Salesman
 DORONKO WANKO
@@ -213,8 +218,8 @@ Final Fantasy Tactics A2: Grimoire of the Rift
 Final Fantasy Tactics: Ivalice Island (FFT PSX)
 Fire Emblem: The Sacred Stones*/
   { name: "FNAF World", img: "./character/fnaf.png" },
-  /*Gato Roboto
-Gato Roboto B-Side*/
+  //Gato Roboto
+  //Gato Roboto B-Side
   {
     name: "Getting Over It with Bennett Foddy",
     img: "./character/getting_over.png",
@@ -302,10 +307,8 @@ Kabuto Park (Demo)*/
     name: "Lego Star Wars: The Complete Saga",
     img: "./character/star_wars_lego.png",
   },
-  /*
-Lingo 2
-Little Witch Nobeta
-*/
+  //Lingo 2
+  //Little Witch Nobeta
   { name: "Luigi's Mansion", img: "./character/luigi.png" },
   { name: "Mario is Missing (SNES)", img: "./character/luigi.png" },
   { name: "Mega Man X4", img: "./character/megaman.png" },
@@ -332,7 +335,6 @@ Nonograhmm*/
   { name: "PEAK", img: "./character/peak.png" },
   //Piranesi Restoration Project (Luanti)
   { name: "Pizza Tower", img: "./character/pizza_tower.png" },
-
   //Placid Plastic Duck Simulator
   { name: "Plants vs. Zombies: GOTY", img: "./character/plant_zombie.png" },
   {
@@ -350,9 +352,9 @@ Nonograhmm*/
   { name: "PokéPark Wii: Pikachu's Adventure", img: "./character/pokemon.png" },
   { name: "Portal 2", img: "./character/portal.png" },
   { name: "PowerWash Simulator", img: "./character/powerwash.png" },
-  /*Prodigal
-Pseudoregalia
-Rabi-Ribi*/
+  //Prodigal
+  //Pseudoregalia
+  //Rabi-Ribi
   { name: "Rain World", img: "./character/rain_world.png" },
 
   { name: "Ratchet & Clank 2: Going Commando", img: "./character/ratchet.png" },
@@ -414,8 +416,8 @@ Wordipelago
 XCOM 2: War of the Chosen
 Yacht Dice Bliss*/
   { name: "Yellow Taxi Goes Vroom", img: "./character/yellow_taxi.png" },
-  /*Yooka-Laylee
-YS VIII: Lacrimosa of Dana*/
+  //Yooka-Laylee
+  //YS VIII: Lacrimosa of Dana
   { name: "Yu-Gi-Oh! Dungeon Dice Monsters", img: "./character/yu_gi_oh.png" },
   { name: "Yu-Gi-Oh! Forbidden Memories", img: "./character/yu_gi_oh.png" },
   {
@@ -428,12 +430,12 @@ YS VIII: Lacrimosa of Dana*/
 
   //Autopelago
   { name: "Banjo-Tooie", img: "./character/banjo_kazooie.png" },
-  /*BK Simulator
-Candy Box 2*/
+  //BK Simulator
+  //Candy Box 2
   { name: "ChecksMate (Chess)", img: "./character/chess.png" },
-  /*Final Fantasy IV: Free Enterprise
-Gauntlet Legends
-Glover*/
+  //Final Fantasy IV: Free Enterprise
+  //Gauntlet Legends
+  //Glover
   { name: "Hades", img: "./character/hades.png" },
   //Hexcells Infinite
   {
@@ -444,13 +446,13 @@ Glover*/
   { name: "Metroid Prime", img: "./character/metroid.png" },
   //OpenRCT2
   { name: "Psychonauts", img: "./character/psychonauts.png" },
-  /*Scooby-Doo! Night of 100 Frights
-Shellipelago
-Stick Ranger*/
+  //Scooby-Doo! Night of 100 Frights
+  //Shellipelago
+  //Stick Ranger
   { name: "Trackmania", img: "./character/trackmania.png" },
-  /*Void Sols
-Wargroove 2
-Wario Land 4*/
+  //Void Sols
+  //Wargroove 2
+  //Wario Land 4
 
   //STABLE NOT PRING
 
@@ -458,26 +460,24 @@ Wario Land 4*/
   { name: "Archipeladoku (Sudoku)", img: "./character/sudoku.png" },
   //Bloons Tower Defense 6
   { name: "Clique", img: "./character/clique.png" },
-  /*Cowtastic Cafe
-Crystal Project
-Dead Rising Deluxe Remastered*/
+  //Cowtastic Cafe
+  //Crystal Project
+  //Dead Rising Deluxe Remastered
   { name: "Donkey Kong Country", img: "./character/donkey_kong.png" },
   {
     name: "Donkey Kong Country 2: Diddy's Kong Quest",
     img: "./character/donkey_kong.png",
   },
   { name: "Don't Starve Together", img: "./character/dont_starve.png" },
-  /*
-Dracomino
-Dragon Warrior
-*/
+  //Dracomino
+  //Dragon Warrior
   {
     name: "The Elder Scrolls IV: Oblivion Remastered",
     img: "./character/oblivion.png",
   },
-  /*Flipwitch
-Frogmonster
-Funi Raccoon Game*/
+  //Flipwitch
+  //Frogmonster
+  //Funi Raccoon Game
   { name: "Garfield Kart: Furious Racing", img: "./character/garfield.png" },
 
   /*The Guardian Legend
@@ -489,11 +489,11 @@ Lunacid*/
   { name: "Mega Man X", img: "./character/megaman.png" },
   { name: "Mega Man X2", img: "./character/megaman.png" },
   { name: "Mega Man X3", img: "./character/megaman.png" },
-  /*Nine Sols
-osu!*/
+  //Nine Sols
+  //osu!
   { name: "Outer Wilds", img: "./character/outer_wilds.png" },
-  /* Path of Exile
-Peaks of Yore*/
+  // Path of Exile
+  //Peaks of Yore
   { name: "Peggle Deluxe", img: "./character/peggle.png" },
   { name: "Peggle Nights", img: "./character/peggle.png" },
   { name: "Pikuniku", img: "./character/pikuniku.png" },
@@ -503,8 +503,7 @@ Peaks of Yore*/
 Resident Evil 3 Remake
 Rogue Legacy
 Skul: The Hero Slayer
-Slay the Spire
-*/
+Slay the Spire*/
   { name: "Sonic Riders", img: "./character/sonic.png" },
   {
     name: "Spongebob Squarepants: Battle for Bikini Bottom",
@@ -518,16 +517,16 @@ Slay the Spire
     name: "Tony Hawk's Pro Skater 1 + 2",
     img: "./character/tony_hawk.png",
   },
-  /*
-Touhou Koumakyou: The Embodiment of Scarlet Devil
-Touhou Youyoumu ~ Perfect Cherry Blossom*/
+  //Touhou Koumakyou: The Embodiment of Scarlet Devil
+  //Touhou Youyoumu ~ Perfect Cherry Blossom
   { name: "ULTRAKILL", img: "./character/ultrakill.png" },
-  /*Unfair Flips
-Zork: Grand Inquisitor*/
+  //Unfair Flips
+  //Zork: Grand Inquisitor
 
   // UNSTABLE
 
   { name: "FEZ", img: "./character/fez.png" },
   { name: "Forager", img: "./character/forager.png" },
 ];
+
 var AVATAR_IMG_DEFAULT = "./character/unknown.png";
