@@ -253,7 +253,7 @@ $(document).ready(function () {
           showProgression: "hideProgression",
           showTrap: "hideTrap",
         };
-        params.append(paramMap[key]);
+        params.append(paramMap[key], true);
       }
     }
 
