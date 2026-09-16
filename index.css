@@ -6,8 +6,11 @@
 }
 
 body {
+  max-width: 1000px;
+}
+
+.margin {
   margin: 40px;
-  max-width: 1200px;
 }
 
 tt {
