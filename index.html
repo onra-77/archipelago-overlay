@@ -17,88 +17,87 @@
         
     </head>
     <body class="margin">
-        <div class="margin">
-            
-        <div id="login" class="shadow">
-            <h1>Archipelago Overlay</h1>
-            <h2>Welcome, enter your archipelago informations below to connect.</h2>
-            <p>Once you click GO, the URL of the page will be replaced to include informations (like <tt>https://onra-77.github.io/archipelago-overlay/?address=archipelago.gg%253A12345&player=onra77&holdtime=10</tt>).
-                You can then copy that URL and use it as an OBS widget</p>
-                <ol>
-                    <li>Enter informations</li>
-                    <li>Click GO</li>
-                    <li>Copy URL</li>
-                    <li>In OBS: Add > Browser source</li>
-                    <li>Paste URL</li>
-                </ol>
-            <h3>Your password will be clearly visible in the URL</h3>
-            <div>
-                <label>Address:</label>
-                <input id="address" value="archipelago.gg"></input>:
-                <input id="port" placeholder="12345"></input>
-            </div>
-            <div>
-                <label>Player:</label>
-                <input id="player" placeholder="You"></input>
-            </div>
-            <div>
-                <label>Password (optional):</label>
-                <input id="passw" type="password"></input>
-            </div>
-            <a target="_blank" href="https://onra-77.github.io/archipelago-overlay?test">Test with fake data</a>
-            <button id="connect">GO</button>
-            <div id="loginError" class="error"></div>
-        </div>
-        <div id="error" class="error"></div>
-        <div id="settings" class="shadow">
-            <div>
-                <div style="margin-bottom: 10px;">
-                    <label for="holdTime">Message hold time:</label>
-                    <input id="holdTime" value="10"></input> seconds
+        <div class="margin" style="max-width: 1000px;">
+            <div id="login" class="shadow">
+                <h1>Archipelago Overlay</h1>
+                <h2>Welcome, enter your archipelago informations below to connect.</h2>
+                <p>Once you click GO, the URL of the page will be replaced to include informations (like <tt>https://onra-77.github.io/archipelago-overlay/?address=archipelago.gg%253A12345&player=onra77&holdtime=10</tt>).
+                    You can then copy that URL and use it as an OBS widget</p>
+                    <ol>
+                        <li>Enter informations</li>
+                        <li>Click GO</li>
+                        <li>Copy URL</li>
+                        <li>In OBS: Add > Browser source</li>
+                        <li>Paste URL</li>
+                    </ol>
+                <h3>Your password will be clearly visible in the URL</h3>
+                <div>
+                    <label>Address:</label>
+                    <input id="address" value="archipelago.gg"></input>:
+                    <input id="port" placeholder="12345"></input>
                 </div>
-                <div style="margin-bottom: 10px;">
-                    <label for="showSelfObjects">Show objects from/to self only:</label>
-                    <input type="checkbox" id="showSelfObjects"></input>
+                <div>
+                    <label>Player:</label>
+                    <input id="player" placeholder="You"></input>
                 </div>
-                <div style="margin-bottom: 10px;">
-                    Show item types:
-                    <input type="checkbox" id="showFiller" checked="">
-                    <label for="showFiller" style="color:teal;">Filler</label>&nbsp;
-                    <input type="checkbox" id="showUseful" checked="">
-                    <label for="showUseful" style="color:blue;">Useful</label>&nbsp;
-                    <input type="checkbox" id="showProgression" checked="">
-                    <label for="showProgression" style="color:purple;">Progression</label>&nbsp;
-                    <input type="checkbox" id="showTrap" checked="">
-                    <label for="showTrap" style="color:red;">Trap</label>&nbsp;
+                <div>
+                    <label>Password (optional):</label>
+                    <input id="passw" type="password"></input>
                 </div>
-                <div style="margin-bottom: 10px;">
-                    <div>
-                        <input type="checkbox" id="showLocation" checked/>
-                        <label for="showLocation">Show Location</label>
+                <a target="_blank" href="https://onra-77.github.io/archipelago-overlay?test">Test with fake data</a>
+                <button id="connect">GO</button>
+                <div id="loginError" class="error"></div>
+            </div>
+            <div id="error" class="error"></div>
+            <div id="settings" class="shadow">
+                <div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="holdTime">Message hold time:</label>
+                        <input id="holdTime" value="10"></input> seconds
                     </div>
-                    <div>
-                        <input type="checkbox" id="showAvatar" checked/>
-                        <label for="showAvatar">Show Avatar</label>
+                    <div style="margin-bottom: 10px;">
+                        <label for="showSelfObjects">Show objects from/to self only:</label>
+                        <input type="checkbox" id="showSelfObjects"></input>
                     </div>
-                    <div>
-                        <input type="checkbox" id="showPlayerName" checked/>
-                        <label for="showPlayerName">Show Player Name</label>
+                    <div style="margin-bottom: 10px;">
+                        Show item types:
+                        <input type="checkbox" id="showFiller" checked="">
+                        <label for="showFiller" style="color:teal;">Filler</label>&nbsp;
+                        <input type="checkbox" id="showUseful" checked="">
+                        <label for="showUseful" style="color:blue;">Useful</label>&nbsp;
+                        <input type="checkbox" id="showProgression" checked="">
+                        <label for="showProgression" style="color:purple;">Progression</label>&nbsp;
+                        <input type="checkbox" id="showTrap" checked="">
+                        <label for="showTrap" style="color:red;">Trap</label>&nbsp;
                     </div>
-                    <div>
-                        <input type="checkbox" id="showGameName" checked/>
-                        <label for="showGameName">Show Game Name</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="showItemName" checked/>
-                        <label for="showItemName">Show Item Name</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="showArrow" checked/>
-                        <label for="showArrow">Show Arrow</label>
+                    <div style="margin-bottom: 10px;">
+                        <div>
+                            <input type="checkbox" id="showLocation" checked/>
+                            <label for="showLocation">Show Location</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="showAvatar" checked/>
+                            <label for="showAvatar">Show Avatar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="showPlayerName" checked/>
+                            <label for="showPlayerName">Show Player Name</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="showGameName" checked/>
+                            <label for="showGameName">Show Game Name</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="showItemName" checked/>
+                            <label for="showItemName">Show Item Name</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="showArrow" checked/>
+                            <label for="showArrow">Show Arrow</label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <div id="transactionList" class="margin">
             <div id="transactionTemplate" class="flex h-1 transaction" style="display:none;">
