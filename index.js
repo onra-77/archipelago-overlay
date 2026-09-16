@@ -47,6 +47,7 @@ $(document).ready(function () {
     showUseful: !params.has("hideUseful"),
     showProgression: !params.has("hideProgression"),
     showTrap: !params.has("hideTrap"),
+    showSelfObjects: !params.has("hideSelfObjects"),
   };
 
   //settings
@@ -88,6 +89,9 @@ $(document).ready(function () {
   $("#showTrap").on("change", function () {
     settings.showTrap = $("#showTrap").is(":checked");
   });
+  $("#showSelfObjects").on("change", function () {
+    settings.showSelfObjects = $("#showSelfObjects").is(":checked");
+  });
 
   //Functions
   function log(message) {
@@ -111,6 +115,13 @@ $(document).ready(function () {
       return;
     }
     if (!settings.showTrap && item.trap) {
+      return;
+    }
+    if (
+      settings.showSelfObjects &&
+      item.sender != player &&
+      item.receiver != player
+    ) {
       return;
     }
 
@@ -258,20 +269,22 @@ $(document).ready(function () {
       return;
     }
 
+    let paramMap = {
+      showLocation: "hideLocation",
+      showAvatar: "hideAvatar",
+      showPlayerName: "hidePlayerName",
+      showGameName: "hideGameName",
+      showItemName: "hideItemName",
+      showArrow: "hideArrow",
+      showFiller: "hideFiller",
+      showUseful: "hideUseful",
+      showProgression: "hideProgression",
+      showTrap: "hideTrap",
+      showSelfObjects: "hideSelfObjects",
+    };
+
     for (let key in settings) {
       if (settings[key] == false) {
-        let paramMap = {
-          showLocation: "hideLocation",
-          showAvatar: "hideAvatar",
-          showPlayerName: "hidePlayerName",
-          showGameName: "hideGameName",
-          showItemName: "hideItemName",
-          showArrow: "hideArrow",
-          showFiller: "hideFiller",
-          showUseful: "hideUseful",
-          showProgression: "hideProgression",
-          showTrap: "hideTrap",
-        };
         params.append(paramMap[key], true);
       }
     }
