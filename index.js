@@ -167,10 +167,7 @@ $(document).ready(function () {
     if (settings.showTrap) usefulness.push("trap");
     if (usefulness.length == 0) {
       if (loginMode) {
-        setTimeout(
-          () => fakeFeed(),
-          ((holdTime * (1.5 - Math.random())) / 2) * 1000,
-        );
+        setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
       }
       return;
     }
@@ -189,7 +186,10 @@ $(document).ready(function () {
     if (loginMode) {
       $("#transactionList").append(element);
       setTimeout(() => wipeTopMessage(elementId), holdTime * 1000);
-      setTimeout(() => fakeFeed(), (holdTime / 2 - 0.1) * 1000);
+      setTimeout(
+        () => fakeFeed(),
+        ((holdTime * (1.5 - Math.random())) / 2) * 1000,
+      );
     }
   }
 
