@@ -93,14 +93,14 @@ var AVATAR_IMG = [
   { name: "Kingdom Hearts 2", img: "./character/kingdom_hearts.png" },
   { name: "Kirby's Dream Land 3", img: "./character/kirby.png" },
   //Landstalker - The Treasures of King Nole
-  { name: "The Legend of Zelda", img: "./character/zelda_ocarina.png" },
+  { name: "The Legend of Zelda", img: "./character/zelda_nes.png" },
   {
     name: "The Legend of Zelda: A Link to the Past",
-    img: "./character/zelda_wind_waker.png",
+    img: "./character/zelda_nes.png",
   },
   {
     name: "The Legend of Zelda: Links Awakening DX",
-    img: "./character/zelda_wind_waker.png",
+    img: "./character/zelda_nes.png",
   },
   { name: "Ocarina of Time", img: "./character/zelda_ocarina.png" },
   {
@@ -269,7 +269,7 @@ Kabuto Park (Demo)*/
   //LADX Beta
   {
     name: "The Legend of Zelda: A Link Between Worlds",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_nes.png",
   },
   {
     name: "The Legend of Zelda: Majora's Mask",
@@ -277,7 +277,7 @@ Kabuto Park (Demo)*/
   },
   {
     name: "The Legend of Zelda: The Minish Cap",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_minish.png",
   },
   {
     name: "The Legend of Zelda: Ocarina of Time - Ship of Harkinian",
@@ -285,7 +285,7 @@ Kabuto Park (Demo)*/
   },
   {
     name: "The Legend of Zelda: Oracle of Seasons",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_nes.png",
   },
   {
     name: "The Legend of Zelda: Phantom Hourglass",
@@ -293,15 +293,11 @@ Kabuto Park (Demo)*/
   },
   {
     name: "The Legend of Zelda: Twilight Princess",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_twilight.png",
   },
   {
     name: "The Legend of Zelda: Skyward Sword",
-    img: "./character/zelda_ocarina.png",
-  },
-  {
-    name: "The Legend of Zelda: Skyward Sword",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_twilight.png",
   },
   {
     name: "Lego Star Wars: The Complete Saga",
@@ -422,7 +418,7 @@ Yacht Dice Bliss*/
   { name: "Yu-Gi-Oh! Forbidden Memories", img: "./character/yu_gi_oh.png" },
   {
     name: "Zelda 2: The Adventure of Link",
-    img: "./character/zelda_ocarina.png",
+    img: "./character/zelda_nes.png",
   },
   //Anno 1800
 
